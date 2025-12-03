@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/* ---------------------------
+   ✅ Add @font-face Here
+---------------------------- */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.woff2") format("woff2"),
+    url("../fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@theme {
+  --spacing: 1px;
+  --spacing-space: clamp(3.125rem, 2.2416rem + 4.417vw, 6.25rem);
+ 
+  --breakpoint-*: initial;
+ 
+  --breakpoint-xsm: 450px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1440px;
+  --breakpoint-2xl: 1712px;
+ 
+  --container-*: initial;
+ 
+  --container-xsm: 450px;
+  --container-sm: 576px;
+  --container-md: 768px;
+  --container-lg: 992px;
+  --container-xl: 1200px;
+  --container-xxl: 1440px;
+  --container-2xl: 1712px;
+ 
+  --font-poppins:  'Poppins';
+ 
+  --text-h1: clamp(42px, 2.5vw + 24px, 64px);
+
+   --text-h2: clamp(30px, 2vw + 21px, 48px);
+  --text-h3: clamp(24px, 1vw + 14px, 31px);
+  --text-24: clamp(20px, .7vw + 14px, 24px);
+  --text-P: clamp(18px, .5vw + 12px, 20px);
+
+  --text-body: 18px;
+ 
+}
+
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    @apply  scroll-smooth!
+  }
+  body{
+    @apply  font-poppins
+  }
+
+  a, button{
+    @apply cursor-pointer
+  }
+.container{
+  @apply  mx-auto px-16
+}
+/* Base Button */
+.btn-blue {
+  @apply px-20 py-10 bg-(--secondary) flex justify-center items-center gap-8 
+         text-white w-fit capitalize text-P relative transition-all duration-500 
+         ease-in-out transform hover:-translate-y-10;
+}
+
+
+ul:not(nav ul, footer ul){
+  @apply relative
+}
+ul li:not(nav ul li, footer ul li){
+  @apply relative pl-29 before:content-[''] before:w-8 before:h-8 before:bg-black before:absolute before:top-12 before:left-8 before:rounded-full
+}
+
+}
+::placeholder{
+  color:#4B4B4B;
+}
+/* Custom color themes using attribute selectors */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --secondary: #0A3D62;
+  --button-text: #FFFFFF;
+  --nav-color:#2a2a2a;
+  --text-grey:#4B4B4B;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+

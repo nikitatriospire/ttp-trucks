@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>The Truck Parts Solution</title>
+        <link rel="stylesheet" href="./assets/css/output.css">
+    </head>
+    <body>
+        <!-- Header Starts -->
+        <header class="sticky w-full top-0 left-0 bg-white py-16 z-10">
+            <div class="container">
+                <div class="inner flex justify-between items-center gap-48">
+                    <!-- Logo -->
+                    <a href="/" aria-label="Homepage" class="relative z-100">
+                        <img src="./assets/images/company-logo.svg" alt="Company Logo">
+                    </a>
+                    <!-- Navigation -->
+                    <nav id="mobileNav" aria-label="Main Navigation" class="top-0 left-0 fixed lg:static bg-white lg:bg-transparent w-full lg:w-auto 
+                    h-screen lg:h-auto 
+                    flex justify-center items-center 
+                    transition-all duration-500 ease-out
+                    opacity-0 -translate-y-10 pointer-events-none
+                    lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto">
+                        <ul class="flex justify-center items-center gap-20 lg:gap-36 
+                    [&_li]:p-6 
+                    [&_li>a]:text-24 lg:[&_li>a]:text-body 
+                    [&_li>a]:text-(--nav-color)
+                    flex-col lg:flex-row">
+                            <li>
+                                <a href="#start" aria-label="Go to Start page" class="navlink">Start</a>
+                            </li>
+                            <li>
+                                <a href="#Unternehmen" aria-label="Go to Unternehmen page" class="navlink">Unternehmen</a>
+                            </li>
+                            <li>
+                                <a href="#Portfolio" aria-label="Go to Portfolio page" class="navlink">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#Kontakt" aria-label="Go to Kontakt page" class="navlink">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Hamburger Button -->
+                    <button
+                        id="menuBtn"
+                        class="relative w-32 h-32 lg:hidden flex flex-col justify-center items-center group gap-6"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileNav"
+                    >
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left 
+                      group-[.open]:rotate-45 group-[.open]:translate-y-0"></span>
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 opacity-100
+                      group-[.open]:opacity-0"></span>
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left
+                      group-[.open]:-rotate-45 group-[.open]:translate-y-5"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Header Ends -->
+        <!-- Main Content Starts -->
+        <div id="maincontent">
+            <!-- Hero Section Starts -->
+            <section id="start">
+                <div class="container">
+                    <div class="inner flex justify-center pt-32 flex-col-reverse lg:flex-row">
+                        <div class="inner-left lg:w-1/2 lg:pr-32 xxl:pr-64 pb-0 lg:pb-80 xxl:pb-187 pt-32 lg:pt-80 xxl:pt-187">
+                            <div class="content space-y-24 lg:space-y-40 flex flex-col justify-center items-start">
+                                <div class="space-y-16">
+                                    <h1 class="text-h1/tight font-medium ">Willkommen bei TTP Ihrem Partner für LKW-Ersatzteile</h1>
+                                    <div class="para text-24 font-normal">
+                                        <p>Ihr Partner für LKW-Ersatzteile in Premiumqualität</p>
+                                    </div>
+                                </div>
+                                <a href="#" role="link" class="btn-blue">
+                                    <span>Finden Sie Ihre Teile</span>
+                                    <img
+                                        src="./assets/images/btn-arrow-white.svg"
+                                        alt="nav arrow for button"
+                                        role="img"
+                                        
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="inn-right lg:w-1/2">
+                            <img
+                                src="./assets/images/banner_img.webp"
+                                srcset="./assets/images/banner_img_mobile.webp 767w,
+                            ./assets/images/banner_img.webp 1200w"
+                                sizes="(max-width: 767px) 100vw, 100vw"
+                                alt="Bannerbild für den Hero-Bereich"
+                                class="size-full object-cover aspect-square sm:aspect-auto"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero Section Ends -->
+            <!-- Ihr Partner Section Starts (section-2) -->
+            <section class="pt-30 md:pt-80 xxl:pt-160 pb-30 md:pb-80">
+                <div class="container">
+                    <div class="inner flex justify-center flex-col lg:flex-row gap-32 lg:gap-48 xl:gap-80">
+                        <div class="inner-left lg:w-1/2">
+                            <div class="w-full lg:sticky lg:top-100">
+                                <img
+                                    src="./assets/images/section-2-img.webp"
+                                    srcset="./assets/images/section-2-img_mobile.webp 767w,
+                            ./assets/images/section-2-img.webp 1200w"
+                                    sizes="(max-width: 767px) 100vw, 100vw"
+                                    alt="The Truck Parts GmbH – Ihr Partner"
+                                    class="object-cover size-full aspect-square sm:aspect-auto"
+                                >
+                            </div>
+                        </div>
+                        <div class="inn-right lg:w-1/2">
+                            <div class="content space-y-24 lg:space-y-40 flex flex-col justify-center items-start">
+                                <div class="space-y-24 lg:space-y-40">
+                                    <h2 class="text-h2 font-medium leading-tight w-[90%]">The Truck Parts GmbH – Ihr Partner</h2>
+                                    <div class="para text-24 font-normal space-y-16">
+                                        <p>TTP steht für Zuverlässigkeit, Qualität und technische Kompetenz im Handel mit Ersatzteilen für Nutzfahrzeuge.</p>
+                                        <p>Unser Team greift auf über 20 Jahre Erfahrung im internationalen Ersatzteilhandel zurück und verbindet diese mit modernen Strukturen und einem klaren Leistungsanspruch.</p>
+                                        <p>Wir haben uns auf Komponenten der führenden Marken Mercedes-Benz, MAN und DAF spezialisiert. Für Iveco, Scania und Volvo liefern wir ebenfalls hochwertige Teile – auf Anfrage und mit derselben Präzision.</p>
+                                    </div>
+                                </div>
+                                <a href="#" role="link" class="btn-blue">
+                                    <span>Finden Sie Ihre Teile</span>
+                                    <img
+                                        src="./assets/images/btn-arrow-white.svg"
+                                        alt="nav arrow for button"
+                                        role="img"
+                                        class=""
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Ihr Partner Section Ends (section-2)-->
+            <!-- Das Unternehmen Section Starts (section-3) -->
+            <section class="pb-30 md:pb-80 xxl:pb-160 pt-30 md:pt-80" id="Unternehmen">
+                <div class="container">
+                    <div class="inner">
+                        <div class="space-y-24 lg:space-y-44">
+                            <div class="flex items-start justify-start flex-col space-y-8">
+                                <span class="block tracking-wide text-24/tight">Erfahrung – Qualität – Vertrauen</span>
+                                <h2 class="text-h2 font-medium leading-tight">Das Unternehmen</h2>
+                            </div>
+                            <div class="content flex gap-32 lg:gap-48 xl:gap-80 flex-col xl:flex-row">
+                                <div class="xl:w-1/2 space-y-24 lg:space-y-40 text-24/tight">
+                                    <p>Unser Unternehmen vereint jahrzehntelange Branchenerfahrung mit modernem Servicegedanken. Wir verstehen uns als zuverlässiger Partner für Werkstätten, Speditionen und Teilehändler, die Wert auf OE- und OEM-Qualität legen.</p>
+                                    <p>Unsere Erfahrung ermöglicht es uns, individuelle Lösungen und passgenaue Ersatzteile für nahezu jede Anforderung anzubieten – mit Fokus auf höchste Kundenzufriedenheit.</p>
+                                </div>
+                                <div class="xl:w-1/2 text-24/tight [&_ul]:space-y-16 xl:[&_ul]:space-y-32 xxl:[&_ul]:w-[86%]">
+                                    <ul>
+                                        <li>Performance durch schnelle Verfügbarkeit und effiziente Prozesse</li>
+                                        <li>Qualität durch Originalteile und OEM-Komponenten führender Hersteller</li>
+                                        <li>Partnerschaft durch persönliche Beratung und faire Konditionen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/images/section-3-img.webp"
+                                    srcset="./assets/images/section-3-img_mobile.webp 767w,
+                            ./assets/images/section-3-img.webp 1200w"
+                                    sizes="(max-width: 767px) 100vw, 100vw"
+                                    alt="Das Unternehmen"
+                                    class="object-cover size-full"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Das Unternehmen Section Ends (section-3) -->
+            <!-- Produktsortiment Section Starts (section-4) -->
+            <section class="pt-30 md:pt-80 lg:pt-96">
+                <div class="container">
+                    <div class="inner">
+                        <div class="space-y-24 lg:space-y-44">
+                            <div class="flex items-start justify-start flex-col space-y-8">
+                                <h2 class="text-h2 font-medium leading-tight">Entdecken Sie unser Produktsortiment</h2>
+                                <div class="para text-24 font-normal">
+                                    <p>Wir bieten Ersatzteile und Komponenten rund um und im LKW – insbesondere für Mercedes, MAN und DAF, auf Anfrage auch für Iveco, Scania und Volvo. Unser Angebot umfasst unter anderem:</p>
+                                </div>
+                            </div>
+                            <div class="cards grid md:grid-cols-2 xl:grid-cols-3 gap-32">
+                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                    <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
+                                        <img
+                                            src="./assets/images/card_icon1.svg"
+                                            alt="icon for Motor und Antriebsstrang"
+                                            role="img"
+                                            class="max-w-120"
+                                        >
+                                        <div class="space-y-16">
+                                            <h3 class="card-title text-h3/tight font-semibold">Motor und Antriebsstrang</h3>
+                                            <div class="para text-P text-(--text-grey)">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                    <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
+                                        <img
+                                            src="./assets/images/card_icon2.svg"
+                                            alt="icon for Brems- und Fahrwerkssysteme"
+                                            role="img"
+                                            class="max-w-120"
+                                        >
+                                        <div class="space-y-16">
+                                            <h3 class="card-title text-h3/tight font-semibold">Brems- und Fahrwerkssysteme</h3>
+                                            <div class="para text-P text-(--text-grey)">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                    <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
+                                        <img
+                                            src="./assets/images/card_icon3.svg"
+                                            alt="icon for Filter, Verschleißteile und Zubehör"
+                                            role="img"
+                                            class="max-w-120"
+                                        >
+                                        <div class="space-y-16">
+                                            <h3 class="card-title text-h3/tight font-semibold">Filter, Verschleißteile und Zubehör</h3>
+                                            <div class="para text-P text-(--text-grey)">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                    <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
+                                        <img
+                                            src="./assets/images/card_icon4.svg"
+                                            alt="icon for Elektrik & Sensorik"
+                                            role="img"
+                                            class="max-w-120"
+                                        >
+                                        <div class="space-y-16">
+                                            <h3 class="card-title text-h3/tight font-semibold">Elektrik & Sensorik</h3>
+                                            <div class="para text-P text-(--text-grey)">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                    <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
+                                        <img
+                                            src="./assets/images/card_icon5.svg"
+                                            alt="icon for Kabine und Karosserieteile"
+                                            role="img"
+                                            class="max-w-120"
+                                        >
+                                        <div class="space-y-16">
+                                            <h3 class="card-title text-h3/tight font-semibold">Kabine und Karosserieteile</h3>
+                                            <div class="para text-P text-(--text-grey)">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="card-item p-24 md:p-40">
+                                    <div class="w-full h-full">
+                                        <img
+                                            src="./assets/images/section-4_img.webp"
+                                            alt="icon for Kabine und Karosserieteile"
+                                            role="img"
+                                            class="aspect-square object-cover"
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Produktsortiment Section Ends (section-4) -->
+            <!-- Nachricht Section Starts (section-5) -->
+            <section class="pt-30 md:pt-80 lg:pt-96" id="Portfolio">
+                <div class="container">
+                    <div class="inner">
+                        <div class="space-y-24 lg:space-y-44">
+                            <div class="flex items-start justify-start flex-col space-y-8">
+                                <h2 class="text-h2 font-medium leading-tight contact-title">
+                                    Sie haben noch Fragen?
+                  Schreiben Sie uns eine Nachricht
+                  [Kontakt]
+                                </h2>
+                            </div>
+                            <div class="w-full h-auto xxl:h-900">
+                                <img
+                                    src="./assets/images/section-5-img.webp"
+                                    srcset="./assets/images/section-5-img_mobile.webp 767w,
+                            ./assets/images/section-5-img.webp 1200w"
+                                    sizes="(max-width: 767px) 100vw, 100vw"
+                                    alt="uns eine Nachricht"
+                                    class="object-cover size-full"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Nachricht Section Ends (section-5) -->
+            <!-- Was bedeuten Section Starts (section-6) -->
+            <section class="pt-30 md:pt-80 lg:pt-96">
+                <div class="container">
+                    <div class="inner">
+                        <div class="space-y-24 lg:space-y-44">
+                            <div class="flex items-start justify-start flex-col space-y-8">
+                                <h2 class="text-h2 font-medium leading-tight">Was bedeuten OE und OEM?</h2>
+                                <div class="para text-24 font-normal">
+                                    <p>Alle Produkte stammen ausschließlich von OE (Original Equipment) oder OEM (Original Equipment Manufacturer) Herstellern – für höchste Qualität und exakte Passgenauigkeit.</p>
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-32">
+                                <div class="card-item1 p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                    <div class="flex flex-col justify-center items-center text-center h-full gap-24 xl:gap-40">
+                                        <img
+                                            src="./assets/images/badge-check.svg"
+                                            alt="icon for OE-Teile (Originalausrüstung)"
+                                            role="img"
+                                            class="max-w-120"
+                                        >
+                                        <div class="space-y-16">
+                                            <h3 class="card-title1 text-h3/tight font-semibold">OE-Teile (Originalausrüstung)</h3>
+                                            <div class="para text-P text-(--text-grey)">
+                                                <p>Bauteile, die direkt vom Fahrzeughersteller verbaut werden – inklusive Originalverpackung und Herstellerlogo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="card-item1 px-24 md:px-40 py-24 md:py-80  border border-solid border-[#D8D8D8]">
+                                    <div class="flex flex-col justify-center items-center text-center h-full gap-24 xl:gap-40">
+                                        <img
+                                            src="./assets/images/settings.svg"
+                                            alt="icon for OEM-Teile (Original Equipment Manufacturer)"
+                                            role="img"
+                                            class="max-w-120"
+                                        >
+                                        <div class="space-y-16">
+                                            <h3 class="card-title1 text-h3/tight font-semibold">OEM-Teile (Original Equipment Manufacturer)</h3>
+                                            <div class="para text-P text-(--text-grey)">
+                                                <p>Vom selben Produzenten gefertigt, jedoch ohne Fahrzeuglogo oder Originalverpackung.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="block text-24 text-center">Beide Varianten bieten identische Qualität, Haltbarkeit und Präzision – OEM-Teile sind lediglich die wirtschaftlichere Alternative.</span>
+                            <div class="w-full h-auto xxl:h-900">
+                                <img
+                                    src="./assets/images/section-6-img.webp"
+                                    srcset="./assets/images/section-6-img_mobile1.webp 767w,
+                            ./assets/images/section-6-img.webp 1200w"
+                                    sizes="(max-width: 767px) 100vw, 100vw"
+                                    alt="uns eine Nachricht"
+                                    class="object-cover size-full"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Was bedeuten Section Ends (section-6) -->
+            <!-- Kontakt Section Starts (section-7) -->
+            <section class="pt-30 md:pt-80 lg:pt-96 pb-30 md:pb-80 lg:pb-96" id="Kontakt">
+                <div class="container">
+                    <div class="inner">
+                        <div class="space-y-24 lg:space-y-44">
+                            <div class="flex items-start justify-start flex-col space-y-8">
+                                <h2 class="text-h2 font-medium leading-tight">Kontakt</h2>
+                                <div class="para text-24 font-normal">
+                                    <p>Haben Sie Fragen oder möchten ein Projekt besprechen? Wir sind hier, um  zu helfen.</p>
+                                </div>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-48">
+                                <div class="space-y-49">
+                                    <div class="flex flex-col gap-16 lg:gap-24">
+                                        <!-- Phone -->
+                                        <div class="flex items-center gap-16">
+                                            <img
+                                                src="./assets/images/Call.svg"
+                                                alt="Telefon Icon"
+                                                class="w-24 h-24"
+                                                role="img"
+                                            >
+                                            <a href="tel:+49123456789" class="text-P leading-normal text-(--text-grey)" aria-label="Telefonnummer anrufen: +49 123 456789">
+                                                +49 123 456789
+                                            </a>
+                                        </div>
+                                        <!-- Email -->
+                                        <div class="flex items-center gap-16">
+                                            <img
+                                                src="./assets/images/Mail.svg"
+                                                alt="E-Mail Icon"
+                                                class="w-24 h-24"
+                                                role="img"
+                                            >
+                                            <a href="mailto:info@ttp.de" class="text-P leading-normal text-(--text-grey)" aria-label="E-Mail senden an info@ttp.de">
+                                                info@ttp.de
+                                            </a>
+                                        </div>
+                                        <!-- Address -->
+                                        <div class="flex items-center gap-16">
+                                            <img
+                                                src="./assets/images/Lpcation.svg"
+                                                alt="Standort Icon"
+                                                class="w-24 h-24"
+                                                role="img"
+                                            >
+                                            <address class="not-italic text-P leading-normal text-(--text-grey)" aria-label="Adresse: Musterstraße 123, 12345 Berlin, Deutschland">
+                                                Musterstraße 123
+                                                <br>
+                                                12345 Berlin, Deutschland
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <!-- MAP IMAGE -->
+                                    <div class="w-full" aria-label="Standortkarte Berlin">
+                                        <!-- Static Image Placeholder -->
+                                        <div
+                                            id="mapPlaceholder"
+                                            class="relative w-full cursor-pointer group"
+                                            role="button"
+                                            aria-label="Interaktive Karte öffnen"
+                                            tabindex="0"
+                                        >
+                                            <img src="./assets/images/map-berlin.webp" alt="Statische Karte von Berlin – klicken um Google Maps zu öffnen" class="w-full h-auto object-cover">
+                                            <!-- Overlay text/icon -->
+                                            <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                                <span class="bg-white text-black px-4 py-2 rounded shadow">
+                                                    Karte öffnen
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- Google Map will be inserted here on click -->
+                                        <div id="mapContainer" class="w-full hidden"></div>
+                                    </div>
+                                </div>
+                                <!-- form -->
+                                <div class="">
+                                    <div class="w-full border border-solid border-[#E0E0E0] p-32 xl:p-56" role="form" aria-label="Kontaktformular Bewerbung">
+                                    <form class="w-full space-y-24" aria-labelledby="form-title">
+                                        <!-- NAME -->
+                                        <div>
+                                            <label for="name" class="block text-P font-mormal mb-8 text-(--text-grey)">Name</label>
+                                            <input
+                                                id="name"
+                                                name="name"
+                                                type="text"
+                                                aria-label="Name Eingabefeld"
+                                                placeholder="Firma"
+                                                autocomplete="new-password"
+                                                class="text-(--text-grey) w-full border border-[#D9D9D9] px-16 py-12 text-P outline-none focus:ring-[#D9D9D9]"
+                                            >
+                                        </div>
+                                      
+                                        <!-- MAIL -->
+                                        <div>
+                                            <label for="mail" class="block text-P font-mormal mb-8 text-(--text-grey)">Mail</label>
+                                            <input
+                                                id="mail"
+                                                name="mail"
+                                                type="email"
+                                                placeholder="deine.email@example.com"
+                                                autocomplete="new-password"
+                                                aria-label="E-Mail Eingabefeld"
+                                                class="text-(--text-grey) w-full border border-[#D9D9D9] px-16 py-12 text-P outline-none focus:ring-[#D9D9D9]"
+                                            >
+                                        </div>
+                                        <!-- TELEFON -->
+                                        <div>
+                                            <label for="phone" class="block text-P font-mormal mb-8 text-(--text-grey)">Telefon number</label>
+                                            <input
+                                                id="phone"
+                                                name="phone"
+                                                type="tel"
+                                                placeholder="+49 123456789"
+                                                autocomplete="new-password"
+                                                aria-label="Telefonnummer Eingabefeld"
+                                                class="text-(--text-grey) w-full border border-[#D9D9D9] px-16 py-12 text-P outline-none focus:ring-[#D9D9D9]"
+                                            >
+                                        </div>
+                                        <!-- NACHRICHT -->
+                                        <div>
+                                            <label for="message" class="block text-P font-mormal mb-8 text-(--text-grey)">Nachricht</label>
+                                            <textarea
+                                                id="message"
+                                                name="message"
+                                                rows="4"
+                                                aria-label="Nachricht Textbereich"
+                                                
+                                                placeholder="Deine Nachricht an uns..."
+                                                class="text-(--text-grey) w-full border border-[#D9D9D9] px-16 py-12 text-P outline-none focus:ring-[#D9D9D9]"
+                                            ></textarea>
+                                        </div>
+                                        <!-- BUTTON -->
+                                        <button type="submit" class="w-full btn-blue" aria-label="Bewerbung Senden Button">
+                                            Bewerbung Senden
+                                        </button>
+                                    </form>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Kontakt Section Ends (section-7)  -->
+
+            <!-- Footer -->
+              <footer class="bg-(--secondary)">
+                  <div class="footer-top py-96 text-white">
+                      <div class="container">
+                          <div class="flex gap-24 2xl:gap-64 justify-start xxl:justify-between flex-wrap xxl:flex-nowrap">
+                               <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-[calc(28%-64px)] space-y-24">
+                                  <img src="./assets/images/logo-invert.svg" alt="company logo for footer" role="img"> 
+                                  <div class="text-P">
+                                    <p>Unser Team steht Ihnen jederzeit für Fragen und Angebote zur Verfügung. Ob telefonisch, per E-Mail oder persönlich – wir freuen uns auf Ihre Kontaktaufnahme.</p>
+                                  </div>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Kontakt</span>
+                                    <ul class="[&_li]:flex [&_li]:text-P [&_li]:gap-14 [&_li]:items-start list-none space-y-20">
+                                      <li> <img
+                                                src="./assets/images/Call.svg"
+                                                alt="Telefon Icon"
+                                                class="w-20 h-20 invert brightness-0  mt-3"
+                                                role="img"
+                                            ><a href="tel:+4915755819658" aria-label="Telefonnummer anrufen: +49 1575 581 9658" role="link">+49 1575 581 9658</a></li>
+                                             <!-- Email -->
+                                        <li>
+                                            <img
+                                                src="./assets/images/Mail.svg"
+                                                alt="E-Mail Icon"
+                                                 class="w-20 h-20 invert brightness-0 mt-5"
+                                                role="img"
+                                            >
+                                            <a href="mailto:info@ttp-solution.de" aria-label="E-Mail senden an info@ttp-solution.de">
+                                                info@ttp-solution.de
+                                            </a>
+                                        </li>
+                                        <!-- Address -->
+                                        <li>
+                                            <img
+                                                src="./assets/images/Lpcation.svg"
+                                                alt="Standort Icon"
+                                                class="w-20 h-20 invert brightness-0  mt-5"
+                                                role="img"
+                                            >
+                                            <address aria-label="Adresse: Musterstraße 123, 12345 Berlin, Deutschland" class="not-italic">
+                                                Industriestraße 12<br> 10115 Berlin <br> Deutschland
+                                               
+                                            </address>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Öffnungszeiten</span>
+                                    <ul class="timings-list [&_li]:grid [&_li]:gap-24 [&_li]:grid-cols-[120px_1fr] [&_li]:text-P space-y-8">
+                                      <li>
+                                          <span>Montag:</span><span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Dienstag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Mittwoch:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Donnerstag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Freitag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                  </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Navigation</span>
+                                    <ul class="[&_li]:text-P space-y-8">
+                                      <li><a href="#" aria-label="" role="link">Heim</a></li>
+                                      <li><a href="#" aria-label="" role="link">Unsere Produkte</a></li>
+                                      <li><a href="#" aria-label="" role="link">Das Unternehmen</a></li>
+                                      <li><a href="#" aria-label="" role="link">Kontakt</a></li>
+                                         
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Rechtliches </span>
+                                    <ul class="[&_li]:text-P space-y-8">
+                                      <li><a href="#" aria-label="" role="link">Impressum</a></li>
+                                      <li><a href="#" aria-label="" role="link">Datenschutzerklärung</a></li>
+                                      <li><a href="#" aria-label="" role="link">AGB</a></li>  
+                                    </ul>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="copyright bg-white py-10 text-P text-(--text-grey) text-center">
+                      <p>© 2025 TTP</p>
+                  </div>
+              </footer>
+            <!-- Footer Ends -->
+          
+
+        </div>
+        <!-- Mobile menu -->
+  
+
+  
+
+        <!-- Card title height alignment -->
+        <script>
+              function setEqualTitleHeights() {
+                const titles = document.querySelectorAll(".card-title, .card-title1");
+
+                // If screen width is below 600px → reset and exit
+                if (window.innerWidth < 600) {
+                  titles.forEach(title => title.style.height = "auto");
+                  return;
+                }
+
+                // Reset height first
+                titles.forEach(title => title.style.height = "auto");
+
+                // Get max height
+                let maxH = 0;
+                titles.forEach(title => {
+                  const h = title.offsetHeight;
+                  if (h > maxH) maxH = h;
+                });
+
+                // Apply max height
+                titles.forEach(title => title.style.height = maxH + "px");
+              }
+
+              // Run on load
+              window.addEventListener("load", setEqualTitleHeights);
+
+              // Run on resize (with delay)
+              window.addEventListener("resize", () => {
+                setTimeout(setEqualTitleHeights, 150);
+              });
+        </script>
+        <!-- Contact title in 3lines -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const title = document.querySelector(".contact-title");
+            if (!title) return;
+
+            const text = [
+              "Sie haben noch Fragen?",
+              "Schreiben Sie uns eine Nachricht",
+              "[Kontakt]"
+            ];
+
+            title.innerHTML = text.join("<br>");
+          });
+        </script>
+        <!-- for map -->
+        <script>
+              document.getElementById("mapPlaceholder").addEventListener("click", loadMap);
+              document.getElementById("mapPlaceholder").addEventListener("keypress", (e) => {
+                if (e.key === "Enter") loadMap();
+              });
+
+              function loadMap() {
+                const mapContainer = document.getElementById("mapContainer");
+
+                // Google Maps embed URL (Berlin example — replace with your location)
+                const mapURL =
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24298.71480895873!2d13.3833!3d52.5167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c77c23b9ff%3A0xf28dc8f2966b5e4c!2sBerlin!5e0!3m2!1sde!2sde!4v0000000000";
+
+                // Inject iframe
+                mapContainer.innerHTML = `
+                  <iframe 
+                    title="Google Maps Standort Berlin"
+                    aria-label="Google Maps Standort Berlin"
+                    src="${mapURL}"
+                    width="100%"
+                    height="350"
+                    loading="lazy"
+                    style="border:0;"
+                    allowfullscreen=""
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                `;
+
+                // Hide placeholder, show map
+                document.getElementById("mapPlaceholder").classList.add("hidden");
+                mapContainer.classList.remove("hidden");
+              }
+        </script>
+        <!-- Header on scroll shad -->
+        <script>
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) {
+        header.classList.add("shadow-lg");
+      } else {
+        header.classList.remove("shadow-lg");
+      }
+    });
+    </script>
+      <script>
+const btn = document.getElementById("menuBtn");
+const nav = document.getElementById("mobileNav");
+const body = document.body;
+
+// Toggle mobile menu
+btn.addEventListener("click", () => {
+  btn.classList.toggle("open");
+
+  const isOpening = nav.classList.contains("opacity-0");
+
+  if (isOpening) {
+    nav.classList.remove("opacity-0", "-translate-y-10", "pointer-events-none");
+    nav.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+    body.classList.add("overflow-hidden");
+  } else {
+    nav.classList.add("opacity-0", "-translate-y-10", "pointer-events-none");
+    nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+    body.classList.remove("overflow-hidden");
+  }
+});
+
+// Nav links
+document.querySelectorAll(".navlink").forEach(link => {
+  link.addEventListener("click", (e) => {
+    const targetID = link.getAttribute("href");
+    const target = document.querySelector(targetID);
+
+    // MOBILE MODE
+    const isMobile = window.innerWidth < 1024;
+
+    if (isMobile) {
+      e.preventDefault();
+
+      // Smooth scroll
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+
+      // Close menu
+      nav.classList.add("opacity-0", "-translate-y-10", "pointer-events-none");
+      nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+      body.classList.remove("overflow-hidden");
+      btn.classList.remove("open");
+
+      return;
+    }
+
+    // DESKTOP MODE — allow normal behavior (NO preventDefault)
+  });
+});
+</script>
+
+    </body>
+</html>
