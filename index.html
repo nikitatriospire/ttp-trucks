@@ -28,16 +28,16 @@
                     [&_li>a]:text-(--nav-color)
                     flex-col lg:flex-row">
                             <li>
-                                <a href="#start"  class="navlink">Start</a>
+                                <a href="#start" aria-label="Go to Start page" class="navlink">Start</a>
                             </li>
                             <li>
-                                <a href="#Unternehmen"  class="navlink">Unternehmen</a>
+                                <a href="#Unternehmen" aria-label="Go to Unternehmen page" class="navlink">Unternehmen</a>
                             </li>
                             <li>
-                                <a href="#Portfolio" class="navlink">Portfolio</a>
+                                <a href="#Portfolio" aria-label="Go to Portfolio page" class="navlink">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#Kontakt" class="navlink">Kontakt</a>
+                                <a href="#Kontakt" aria-label="Go to Kontakt page" class="navlink">Kontakt</a>
                             </li>
                         </ul>
                     </nav>
@@ -457,7 +457,7 @@
                                 <!-- form -->
                                 <div class="">
                                     <div class="w-full border border-solid border-[#E0E0E0] p-32 xl:p-56" role="form" aria-label="Kontaktformular Bewerbung">
-                                    <form class="w-full space-y-24" aria-labelledby="form-title">
+                                    <form class="w-full space-y-24">
                                         <!-- NAME -->
                                         <div>
                                             <label for="name" class="block text-P font-mormal mb-8 text-(--text-grey)">Name</label>
@@ -712,7 +712,7 @@
                 mapContainer.classList.remove("hidden");
               }
         </script>
-        <!-- Header on scroll shad -->
+        <!-- Header on scroll shadow -->
         <script>
     const header = document.querySelector("header");
 
