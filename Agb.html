@@ -13,8 +13,8 @@
         <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.png">
     </head>
     <body>
-        <!-- Header Starts -->
-        <header class="sticky w-full top-0 left-0 bg-white py-16 z-10 h-92">
+           <!-- Header Starts -->
+        <header class="fixed w-full top-0 left-0 bg-white py-16 z-10">
             <div class="container">
                 <div class="inner flex justify-between items-center gap-48">
                     <!-- Logo -->
@@ -22,20 +22,21 @@
                         <img src="./assets/images/company-logo.svg" alt="Company Logo" class="relative z-100 w-160 sm:w-200 md:w-225">
                     </a>
                     <!-- Navigation -->
-                    <nav id="mobileNav" aria-label="Main Navigation" class="pt-140 sm:pt-160 md:pt-220 lg:pt-0 top-0 left-0 fixed lg:static bg-white lg:bg-transparent w-full lg:w-auto
+                    <nav id="mobileNav" aria-label="Main Navigation"
+                        class="pt-140 sm:pt-160 md:pt-220 lg:pt-0 top-0 left-0 fixed lg:static bg-white lg:bg-transparent w-full lg:w-auto
                         h-screen lg:h-auto flex justify-center items-start lg:items-center
                         transition-all duration-500 ease-out
                         opacity-0 -translate-y-200 pointer-events-none
                         lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto">
-                        <ul class="flex justify-center items-center gap-20 lg:gap-36 flex-col lg:flex-row
-                            [&_li]:p-6 [&_a]:text-24
+                                                <ul class="flex justify-center items-center gap-20 lg:gap-36 flex-col lg:flex-row
+                            lg:[&_li]:p-6 [&_a]:text-24
                             sm:[&_a]:text-[28px]
                             md:[&_a]:text-[32px] lg:[&_a]:text-body
                             [&_a]:text-(--nav-color)
                             transition-all duration-500 ease-out
-                            opacity-0 lg:opacity-100 translate-y-10 
+                            opacity-0 lg:opacity-100 translate-y-0
                             ">
-                            <li>
+                                                    <li>
                                 <a href="#start" aria-label="Go to Start page" class="navlink">Start</a>
                             </li>
                             <li>
@@ -62,11 +63,12 @@
                         <span class="block w-full h-3 bg-black rounded transition-all duration-300 opacity-100
                       group-[.open]:opacity-0"></span>
                         <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left
-                      group-[.open]:-rotate-45 group-[.open]:translate-y-5"></span>
+                      group-[.open]:-rotate-45 group-[.open]:translate-y-3"></span>
                     </button>
                 </div>
             </div>
         </header>
+        <!-- Header Ends -->
         <!-- Page Banner -->
         <section class="inner-page-banner Impressum bg-(--secondary) py-100">
             <div class="container">

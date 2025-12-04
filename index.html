@@ -17,7 +17,7 @@
     </head>
     <body>
         <!-- Header Starts -->
-        <header class="fixed w-full top-0 left-0 bg-white py-16 z-10 h-92">
+        <header class="fixed w-full top-0 left-0 bg-white py-16 z-10">
             <div class="container">
                 <div class="inner flex justify-between items-center gap-48">
                     <!-- Logo -->
@@ -32,12 +32,12 @@
                         opacity-0 -translate-y-200 pointer-events-none
                         lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto">
                                                 <ul class="flex justify-center items-center gap-20 lg:gap-36 flex-col lg:flex-row
-                            [&_li]:p-6 [&_a]:text-24
+                            lg:[&_li]:p-6 [&_a]:text-24
                             sm:[&_a]:text-[28px]
                             md:[&_a]:text-[32px] lg:[&_a]:text-body
                             [&_a]:text-(--nav-color)
                             transition-all duration-500 ease-out
-                            opacity-0 lg:opacity-100 translate-y-10 
+                            opacity-0 lg:opacity-100 translate-y-0
                             ">
                                                     <li>
                                 <a href="#start" aria-label="Go to Start page" class="navlink">Start</a>
@@ -66,7 +66,7 @@
                         <span class="block w-full h-3 bg-black rounded transition-all duration-300 opacity-100
                       group-[.open]:opacity-0"></span>
                         <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left
-                      group-[.open]:-rotate-45 group-[.open]:translate-y-5"></span>
+                      group-[.open]:-rotate-45 group-[.open]:translate-y-3"></span>
                     </button>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                             <div class="content space-y-24 lg:space-y-40 flex flex-col justify-center items-start">
                                 <div class="space-y-16">
                                     <h1 class="text-h1/tight font-medium ">Willkommen bei TTP Ihrem Partner für LKW-Ersatzteile</h1>
-                                    <div class="para text-24 font-normal">
+                                    <div class="para tetx-P sm:text-24 font-normal">
                                         <p>Ihr Partner für LKW-Ersatzteile in Premiumqualität</p>
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@
                             <div class="content space-y-24 lg:space-y-40 flex flex-col justify-center items-start">
                                 <div class="space-y-24 lg:space-y-40">
                                     <h2 class="text-h2 font-medium leading-tight w-[90%]">The Truck Parts GmbH – Ihr Partner</h2>
-                                    <div class="para text-24 font-normal space-y-16">
+                                    <div class="para tetx-P sm:text-24 font-normal space-y-16">
                                         <p>TTP steht für Zuverlässigkeit, Qualität und technische Kompetenz im Handel mit Ersatzteilen für Nutzfahrzeuge.</p>
                                         <p>Unser Team greift auf über 20 Jahre Erfahrung im internationalen Ersatzteilhandel zurück und verbindet diese mit modernen Strukturen und einem klaren Leistungsanspruch.</p>
                                         <p>Wir haben uns auf Komponenten der führenden Marken Mercedes-Benz, MAN und DAF spezialisiert. Für Iveco, Scania und Volvo liefern wir ebenfalls hochwertige Teile – auf Anfrage und mit derselben Präzision.</p>
@@ -159,15 +159,15 @@
                     <div class="inner">
                         <div class="space-y-24 lg:space-y-44">
                             <div class="flex items-start justify-start flex-col space-y-8">
-                                <span class="block tracking-wide text-24">Erfahrung – Qualität – Vertrauen</span>
+                                <span class="block tracking-wide tetx-P sm:text-24">Erfahrung – Qualität – Vertrauen</span>
                                 <h2 class="text-h2 font-medium leading-tight">Das Unternehmen</h2>
                             </div>
                             <div class="content flex gap-32 lg:gap-48 xl:gap-80 flex-col xl:flex-row">
-                                <div class="xl:w-1/2 space-y-24 lg:space-y-40 text-24">
+                                <div class="xl:w-1/2 space-y-24 lg:space-y-40 tetx-P sm:text-24">
                                     <p>Unser Unternehmen vereint jahrzehntelange Branchenerfahrung mit modernem Servicegedanken. Wir verstehen uns als zuverlässiger Partner für Werkstätten, Speditionen und Teilehändler, die Wert auf OE- und OEM-Qualität legen.</p>
                                     <p>Unsere Erfahrung ermöglicht es uns, individuelle Lösungen und passgenaue Ersatzteile für nahezu jede Anforderung anzubieten – mit Fokus auf höchste Kundenzufriedenheit.</p>
                                 </div>
-                                <div class="xl:w-1/2 text-24 [&_ul]:space-y-16 xl:[&_ul]:space-y-32 xxl:[&_ul]:w-[86%]">
+                                <div class="xl:w-1/2 tetx-P sm:text-24 [&_ul]:space-y-16 xl:[&_ul]:space-y-32 xxl:[&_ul]:w-[86%]">
                                     <ul>
                                         <li>Performance durch schnelle Verfügbarkeit und effiziente Prozesse</li>
                                         <li>Qualität durch Originalteile und OEM-Komponenten führender Hersteller</li>
@@ -197,12 +197,12 @@
                         <div class="space-y-24 lg:space-y-44">
                             <div class="flex items-start justify-start flex-col space-y-8">
                                 <h2 class="text-h2 font-medium leading-tight">Entdecken Sie unser Produktsortiment</h2>
-                                <div class="para text-24 font-normal">
+                                <div class="para tetx-P sm:text-24 font-normal">
                                     <p>Wir bieten Ersatzteile und Komponenten rund um und im LKW – insbesondere für Mercedes, MAN und DAF, auf Anfrage auch für Iveco, Scania und Volvo. Unser Angebot umfasst unter anderem:</p>
                                 </div>
                             </div>
                             <div class="cards grid md:grid-cols-2 xl:grid-cols-3 gap-32">
-                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                <div class="card-item p-16 sm:p-24 md:p-40 border border-solid border-[#D8D8D8]">
                                     <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
                                         <img
                                             src="./assets/images/card_icon1.svg"
@@ -219,7 +219,7 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                <div class="card-item p-16 sm:p-24 md:p-40 border border-solid border-[#D8D8D8]">
                                     <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
                                         <img
                                             src="./assets/images/card_icon2.svg"
@@ -236,7 +236,7 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                <div class="card-item p-16 sm:p-24 md:p-40 border border-solid border-[#D8D8D8]">
                                     <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
                                         <img
                                             src="./assets/images/card_icon3.svg"
@@ -253,7 +253,7 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                <div class="card-item p-16 sm:p-24 md:p-40 border border-solid border-[#D8D8D8]">
                                     <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
                                         <img
                                             src="./assets/images/card_icon4.svg"
@@ -270,7 +270,7 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="card-item p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                <div class="card-item p-16 sm:p-24 md:p-40 border border-solid border-[#D8D8D8]">
                                     <div class="flex flex-col justify-between gap-40 md:gap-96 h-full">
                                         <img
                                             src="./assets/images/card_icon5.svg"
@@ -287,7 +287,7 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="card-item p-24 md:p-40">
+                                <div class="card-item p-16 sm:p-24 md:p-40">
                                     <div class="w-full h-full">
                                         <img
                                             src="./assets/images/section-4_img.webp"
@@ -337,12 +337,12 @@
                         <div class="space-y-24 lg:space-y-44">
                             <div class="flex items-start justify-start flex-col space-y-8">
                                 <h2 class="text-h2 font-medium leading-tight">Was bedeuten OE und OEM?</h2>
-                                <div class="para text-24 font-normal">
+                                <div class="para tetx-P sm:text-24 font-normal">
                                     <p>Alle Produkte stammen ausschließlich von OE (Original Equipment) oder OEM (Original Equipment Manufacturer) Herstellern – für höchste Qualität und exakte Passgenauigkeit.</p>
                                 </div>
                             </div>
                             <div class="grid md:grid-cols-2 gap-32">
-                                <div class="card-item1 p-24 md:p-40 border border-solid border-[#D8D8D8]">
+                                <div class="card-item1 px-16 sm:px-24 md:px-40 py-16 sm:py-24 md:py-80 border border-solid border-[#D8D8D8]">
                                     <div class="flex flex-col justify-center items-center text-center h-full gap-24 xl:gap-40">
                                         <img
                                             src="./assets/images/badge-check.svg"
@@ -351,7 +351,7 @@
                                             class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
-                                            <h3 class="card-title1 text-h3/tight font-semibold">OE-Teile (Originalausrüstung)</h3>
+                                            <h3 class="card-title1 text-24 xsm:text-h3/tight font-semibold">OE-Teile (Originalausrüstung)</h3>
                                             <div class="para text-P text-(--text-grey)">
                                                 <p>Bauteile, die direkt vom Fahrzeughersteller verbaut werden – inklusive Originalverpackung und Herstellerlogo.</p>
                                             </div>
@@ -359,7 +359,7 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="card-item1 px-24 md:px-40 py-24 md:py-80  border border-solid border-[#D8D8D8]">
+                                <div class="card-item1 px-16 sm:px-24 md:px-40 py-16 sm:py-24 md:py-80  border border-solid border-[#D8D8D8]">
                                     <div class="flex flex-col justify-center items-center text-center h-full gap-24 xl:gap-40">
                                         <img
                                             src="./assets/images/settings.svg"
@@ -368,7 +368,7 @@
                                             class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
-                                            <h3 class="card-title1 text-h3/tight font-semibold">OEM-Teile (Original Equipment Manufacturer)</h3>
+                                            <h3 class="card-title1 text-24 xsm:text-h3/tight font-semibold">OEM-Teile (Original Equipment Manufacturer)</h3>
                                             <div class="para text-P text-(--text-grey)">
                                                 <p>Vom selben Produzenten gefertigt, jedoch ohne Fahrzeuglogo oder Originalverpackung.</p>
                                             </div>
@@ -399,7 +399,7 @@
                         <div class="space-y-24 lg:space-y-44">
                             <div class="flex items-start justify-start flex-col space-y-8">
                                 <h2 class="text-h2 font-medium leading-tight">Kontakt</h2>
-                                <div class="para text-24 font-normal">
+                                <div class="para tetx-P sm:text-24 font-normal">
                                     <p>Haben Sie Fragen oder möchten ein Projekt besprechen? Wir sind hier, um  zu helfen.</p>
                                 </div>
                             </div>

@@ -72,10 +72,10 @@
  
   --font-poppins:  'Poppins';
  
-  --text-h1: clamp(38px, 2.5vw + 24px, 64px);
+  --text-h1: clamp(36px, 2.5vw + 24px, 64px);
 
-   --text-h2: clamp(30px, 2vw + 21px, 48px);
-  --text-h3: clamp(24px, 1vw + 14px, 31px);
+   --text-h2: clamp(28px, 2vw + 21px, 48px);
+  --text-h3: clamp(22px, 1vw + 14px, 31px);
   --text-24: clamp(20px, .7vw + 14px, 24px);
   --text-P: clamp(18px, .5vw + 12px, 20px);
 

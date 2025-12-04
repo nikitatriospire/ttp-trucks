@@ -23,9 +23,9 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-poppins: 'Poppins';
-    --text-h1: clamp(38px, 2.5vw + 24px, 64px);
-    --text-h2: clamp(30px, 2vw + 21px, 48px);
-    --text-h3: clamp(24px, 1vw + 14px, 31px);
+    --text-h1: clamp(36px, 2.5vw + 24px, 64px);
+    --text-h2: clamp(28px, 2vw + 21px, 48px);
+    --text-h3: clamp(22px, 1vw + 14px, 31px);
     --text-24: clamp(20px, .7vw + 14px, 24px);
     --text-P: clamp(18px, .5vw + 12px, 20px);
     --text-body: 18px;
@@ -283,9 +283,6 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
-  .h-92 {
-    height: calc(var(--spacing) * 92);
-  }
   .h-auto {
     height: auto;
   }
@@ -470,8 +467,8 @@
   .object-cover {
     object-fit: cover;
   }
-  .p-24 {
-    padding: calc(var(--spacing) * 24);
+  .p-16 {
+    padding: calc(var(--spacing) * 16);
   }
   .p-32 {
     padding: calc(var(--spacing) * 32);
@@ -481,9 +478,6 @@
   }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
-  }
-  .px-24 {
-    padding-inline: calc(var(--spacing) * 24);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -496,9 +490,6 @@
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
-  }
-  .py-24 {
-    padding-block: calc(var(--spacing) * 24);
   }
   .py-30 {
     padding-block: calc(var(--spacing) * 30);
@@ -644,9 +635,9 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .group-\[\.open\]\:translate-y-5 {
+  .group-\[\.open\]\:translate-y-3 {
     &:is(:where(.group):is(.open) *) {
-      --tw-translate-y: calc(var(--spacing) * 5);
+      --tw-translate-y: calc(var(--spacing) * 3);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
@@ -670,6 +661,12 @@
       --tw-ring-color: #D9D9D9;
     }
   }
+  .xsm\:text-h3\/tight {
+    @media (width >= 450px) {
+      font-size: var(--text-h3);
+      line-height: var(--leading-tight);
+    }
+  }
   .sm\:aspect-auto {
     @media (width >= 576px) {
       aspect-ratio: auto;
@@ -680,9 +677,29 @@
       width: calc(var(--spacing) * 200);
     }
   }
+  .sm\:p-24 {
+    @media (width >= 576px) {
+      padding: calc(var(--spacing) * 24);
+    }
+  }
+  .sm\:px-24 {
+    @media (width >= 576px) {
+      padding-inline: calc(var(--spacing) * 24);
+    }
+  }
+  .sm\:py-24 {
+    @media (width >= 576px) {
+      padding-block: calc(var(--spacing) * 24);
+    }
+  }
   .sm\:pt-160 {
     @media (width >= 576px) {
       padding-top: calc(var(--spacing) * 160);
+    }
+  }
+  .sm\:text-24 {
+    @media (width >= 576px) {
+      font-size: var(--text-24);
     }
   }
   .sm\:text-h1 {
@@ -1054,14 +1071,16 @@
       gap: calc(var(--spacing) * 24);
     }
   }
-  .\[\&_li\]\:p-6 {
-    & li {
-      padding: calc(var(--spacing) * 6);
-    }
-  }
   .\[\&_li\]\:text-P {
     & li {
       font-size: var(--text-P);
+    }
+  }
+  .lg\:\[\&_li\]\:p-6 {
+    @media (width >= 992px) {
+      & li {
+        padding: calc(var(--spacing) * 6);
+      }
     }
   }
   .\[\&_ul\]\:space-y-16 {
