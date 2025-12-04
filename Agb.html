@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>The Truck Parts Solution</title>
+        <link rel="stylesheet" href="./assets/css/output.css">
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.png">
+    </head>
+    <body>
+        <!-- Header Starts -->
+        <header class="sticky w-full top-0 left-0 bg-white py-16 z-10">
+            <div class="container">
+                <div class="inner flex justify-between items-center gap-48">
+                    <!-- Logo -->
+                    <a href="/" aria-label="Homepage" class="relative z-100">
+                        <img src="./assets/images/company-logo.svg" alt="Company Logo" class="relative z-100 w-200 md:w-225">
+                    </a>
+                    <!-- Navigation -->
+                    <nav id="mobileNav" aria-label="Main Navigation" class="top-0 left-0 fixed lg:static bg-white lg:bg-transparent w-full lg:w-auto 
+                    h-screen lg:h-auto 
+                    flex justify-center items-center 
+                    transition-all duration-500 ease-out
+                    opacity-0 -translate-y-10 pointer-events-none
+                    lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto">
+                        <ul class="flex justify-center items-center gap-20 lg:gap-36 
+                    [&_li]:p-6 
+                    [&_li>a]:text-24 lg:[&_li>a]:text-body 
+                    [&_li>a]:text-(--nav-color)
+                    flex-col lg:flex-row">
+                            <li>
+                                <a href="#start" aria-label="Go to Start page" class="navlink">Start</a>
+                            </li>
+                            <li>
+                                <a href="#Unternehmen" aria-label="Go to Unternehmen page" class="navlink">Unternehmen</a>
+                            </li>
+                            <li>
+                                <a href="#Portfolio" aria-label="Go to Portfolio page" class="navlink">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#Kontakt" aria-label="Go to Kontakt page" class="navlink">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Hamburger Button -->
+                    <button
+                        id="menuBtn"
+                        class="relative w-32 h-32 lg:hidden flex flex-col justify-center items-center group gap-6"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileNav"
+                    >
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left 
+                      group-[.open]:rotate-45 group-[.open]:translate-y-0"></span>
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 opacity-100
+                      group-[.open]:opacity-0"></span>
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left
+                      group-[.open]:-rotate-45 group-[.open]:translate-y-5"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+       <!-- Page Banner -->
+<section class="inner-page-banner Impressum bg-(--secondary) py-100">
+  <div class="container">
+    <div class="inner-text-b">
+      <h1 class="text-white text-h2 sm:text-h1 font-medium">AGB</h1>
+    </div>
+  </div>
+</section>
+
+<!-- AGB Content -->
+<section class="section-padding py-30 md:py-60 xl:py-100">
+  <div class="container">
+    <div class="all-desc single-page-content">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dui ut justo sollicitudin tempor. Suspendisse potenti. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <!-- Section 1 -->
+  <h2 class="wp-block-heading">1. Geltungsbereich</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et orci eu nunc gravida tincidunt. Donec dignissim leo vitae felis sagittis, sed faucibus velit bibendum.</p>
+
+  <!-- Section 2 -->
+  <h2 class="wp-block-heading">2. Vertragsabschluss</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur erat non turpis dignissim, vitae volutpat augue aliquam. Maecenas ultricies neque ac tellus finibus, sed vulputate felis suscipit.</p>
+
+  <ul class="wp-block-list">
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  </ul>
+
+  <!-- Section 3 -->
+  <h2 class="wp-block-heading">3. Preise und Zahlungsbedingungen</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus interdum, congue neque vitae, ultrices tortor.</p>
+
+  <ol class="wp-block-list">
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  </ol>
+
+  <!-- Section 4 -->
+  <h2 class="wp-block-heading">4. Lieferung und Versand</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus nunc sit amet massa feugiat volutpat.</p>
+
+  <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></p>
+
+  <!-- Section 5 -->
+  <h2 class="wp-block-heading">5. Widerrufsrecht</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit risus sit amet tortor bibendum.</p>
+  <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+
+  <!-- Section 6 -->
+  <h2 class="wp-block-heading">6. Haftung</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas justo sed lorem rhoncus.</p>
+
+  <!-- Section 7 -->
+  <h2 class="wp-block-heading">7. Datenschutz</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis nunc sit amet libero malesuada cursus.</p>
+
+  <ul class="wp-block-list">
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  </ul>
+
+  <!-- Section 8 -->
+  <h2 class="wp-block-heading">8. Schlussbestimmungen</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi condimentum est ac mi facilisis, vel faucibus nunc varius.</p>
+
+  <p><strong>Lorem ipsum dolor sit amet:</strong> Januar 2025</p>
+
+</div>
+
+  </div>
+</section>
+
+
+        <!-- Footer -->
+            <footer class="bg-(--secondary)">
+                  <div class="footer-top py-60 md:py-80 lg:py-96 text-white">
+                      <div class="container">
+                          <div class="flex gap-24 2xl:gap-64 justify-start xxl:justify-between flex-wrap xxl:flex-nowrap">
+                               <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-[calc(28%-64px)] space-y-24">
+                                  <img src="./assets/images/logo-invert.svg" alt="company logo for footer" role="img" class="w-150"> 
+                                  <div class="text-P">
+                                    <p>Unser Team steht Ihnen jederzeit für Fragen und Angebote zur Verfügung. Ob telefonisch, per E-Mail oder persönlich – wir freuen uns auf Ihre Kontaktaufnahme.</p>
+                                  </div>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Kontakt</span>
+                                    <ul class="[&_li]:flex [&_li]:text-P [&_li]:gap-14 [&_li]:items-start list-none space-y-20">
+                                      <li> <img
+                                                src="./assets/images/Call.svg"
+                                                alt="Telefon Icon"
+                                                class="w-20 h-20 invert brightness-0  mt-3"
+                                                role="img"
+                                            ><a href="tel:+4915755819658" aria-label="Telefonnummer anrufen: +49 1575 581 9658" role="link">+49 1575 581 9658</a></li>
+                                             <!-- Email -->
+                                        <li>
+                                            <img
+                                                src="./assets/images/Mail.svg"
+                                                alt="E-Mail Icon"
+                                                 class="w-20 h-20 invert brightness-0 mt-5"
+                                                role="img"
+                                            >
+                                            <a href="mailto:info@ttp-solution.de" aria-label="E-Mail senden an info@ttp-solution.de">
+                                                info@ttp-solution.de
+                                            </a>
+                                        </li>
+                                        <!-- Address -->
+                                        <li>
+                                            <img
+                                                src="./assets/images/Lpcation.svg"
+                                                alt="Standort Icon"
+                                                class="w-20 h-20 invert brightness-0  mt-5"
+                                                role="img"
+                                            >
+                                            <address aria-label="Adresse: Musterstraße 123, 12345 Berlin, Deutschland" class="not-italic">
+                                                Industriestraße 12<br> 10115 Berlin <br> Deutschland
+                                               
+                                            </address>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Öffnungszeiten</span>
+                                    <ul class="timings-list [&_li]:grid [&_li]:gap-24 [&_li]:grid-cols-[120px_1fr] [&_li]:text-P space-y-8">
+                                      <li>
+                                          <span>Montag:</span><span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Dienstag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Mittwoch:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Donnerstag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Freitag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                  </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Navigation</span>
+                                    <ul class="[&_li]:text-P space-y-8">
+                                      <li><a class="navlink" href="#start" role="link">Heim</a></li>
+                                      <li><a class="navlink" href="#Portfolio" role="link">Unsere Produkte</a></li>
+                                      <li><a class="navlink" href="#Unternehmen"role="link">Das Unternehmen</a></li>
+                                      <li><a class="navlink" href="#Kontakt" role="link">Kontakt</a></li>
+                                         
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Rechtliches </span>
+                                    <ul class="[&_li]:text-P space-y-8">
+                                      <li><a href="/Impressum.html" aria-label="" role="link">Impressum</a></li>
+                                      <li><a href="/Datenschutzerklärung.html" aria-label="" role="link">Datenschutzerklärung</a></li>
+                                      <li><a href="/Agb.html" aria-label="" role="link">AGB</a></li>  
+                                    </ul>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="copyright bg-white py-10 text-P text-(--text-grey) text-center">
+                      <p>© 2025 TTP</p>
+                  </div>
+            </footer>
+        <!-- Footer Ends -->
+  
+
+     <!-- Script -->
+    <script src="./assets/js/script.js"></script>
+
+    </body>
+</html>

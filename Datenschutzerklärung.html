@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>The Truck Parts Solution</title>
+        <link rel="stylesheet" href="./assets/css/output.css">
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.png">
+    </head>
+    <body>
+        <!-- Header Starts -->
+        <header class="sticky w-full top-0 left-0 bg-white py-16 z-10">
+            <div class="container">
+                <div class="inner flex justify-between items-center gap-48">
+                    <!-- Logo -->
+                    <a href="/" aria-label="Homepage" class="relative z-100">
+                        <img src="./assets/images/company-logo.svg" alt="Company Logo" class="relative z-100 w-200 md:w-225">
+                    </a>
+                    <!-- Navigation -->
+                    <nav id="mobileNav" aria-label="Main Navigation" class="top-0 left-0 fixed lg:static bg-white lg:bg-transparent w-full lg:w-auto 
+                    h-screen lg:h-auto 
+                    flex justify-center items-center 
+                    transition-all duration-500 ease-out
+                    opacity-0 -translate-y-10 pointer-events-none
+                    lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto">
+                        <ul class="flex justify-center items-center gap-20 lg:gap-36 
+                    [&_li]:p-6 
+                    [&_li>a]:text-24 lg:[&_li>a]:text-body 
+                    [&_li>a]:text-(--nav-color)
+                    flex-col lg:flex-row">
+                            <li>
+                                <a href="#start" aria-label="Go to Start page" class="navlink">Start</a>
+                            </li>
+                            <li>
+                                <a href="#Unternehmen" aria-label="Go to Unternehmen page" class="navlink">Unternehmen</a>
+                            </li>
+                            <li>
+                                <a href="#Portfolio" aria-label="Go to Portfolio page" class="navlink">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#Kontakt" aria-label="Go to Kontakt page" class="navlink">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Hamburger Button -->
+                    <button
+                        id="menuBtn"
+                        class="relative w-32 h-32 lg:hidden flex flex-col justify-center items-center group gap-6"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileNav"
+                    >
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left 
+                      group-[.open]:rotate-45 group-[.open]:translate-y-0"></span>
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 opacity-100
+                      group-[.open]:opacity-0"></span>
+                        <span class="block w-full h-3 bg-black rounded transition-all duration-300 origin-left
+                      group-[.open]:-rotate-45 group-[.open]:translate-y-5"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Header Ends -->
+         <section class="inner-page-banner Impressum bg-(--secondary) py-100">
+                <div class="container">
+                    <div class="inner-text-b">
+                        <h1 class="text-white text-h2 sm:text-h1 font-medium">Datenschutzerklärung</h1>
+                </div>
+            </section>
+         <section class="section-padding py-30 md:py-60 xl:py-100">
+  <div class="container">
+    <div class="all-desc single-page-content">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis volutpat velit, vel luctus lacus convallis non. Sed sed viverra ipsum. Cras porta massa ut porta lobortis, interdum commodo nulla rutrum.</p>
+
+      <p>Aliquam efficitur, eros in imperdiet volutpat, nibh magna sagittis erat, sit amet tincidunt massa est nec enim. Integer ultricies risus non elit sollicitudin, at interdum leo dapibus. Nullam arcu orci, tristique ut lobortis in, aliquet sit amet leo.</p>
+
+      <p>Morbi posuere interdum arcu, eget convallis justo scelerisque eu. Duis in dui ultricies, hendrerit libero nec, varius arcu. Aenean vel posuere erat. Donec id velit tincidunt, euismod purus at, volutpat lorem.</p>
+
+      <p>Nam non turpis justo. Donec faucibus, turpis vitae facilisis vestibulum, nisi turpis sodales libero, et pretium purus nibh et justo.</p>
+
+      <p>
+        I. Lorem ipsum dolor sit amet<br>
+        II. Consectetur adipiscing elit<br>
+        III. Sed do eiusmod tempor
+      </p>
+
+      <h2 class="wp-block-heading">I. Verantwortliche Stelle</h2>
+
+      <p>Curabitur sagittis, justo vitae laoreet tincidunt, purus sapien gravida massa, ut venenatis lorem lorem ut justo.</p>
+
+      <p><strong>Lorem Ipsum GmbH</strong><br>
+        Max Mustermann<br>
+        Musterstraße 7<br>
+        12345 Berlin</p>
+
+      <p>
+        Telefon: <a href="tel:+490000000000">+49 00 0000 0000</a><br>
+        E-Mail: <a href="mailto:mail@example.com">mail@example.com</a>
+      </p>
+
+      <h2 class="wp-block-heading">II. Rechte der Nutzer</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at vehicula elit.</p>
+
+      <ul class="wp-block-list">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Integer vulputate nunc eget felis facilisis, vitae cursus libero mattis.</li>
+        <li>Morbi vitae lorem suscipit, ullamcorper sem vel, vestibulum orci.</li>
+        <li>Nunc interdum mauris ac cursus consectetur.</li>
+        <li>Aenean egestas augue a justo faucibus venenatis.</li>
+      </ul>
+
+      <p>Aliquam nec lacus id velit dapibus tristique non quis sapien. Integer cursus libero at sem tempus maximus.</p>
+
+      <p><strong>Nam bibendum elit nec purus tincidunt, ac eleifend libero tempus. Vestibulum egestas magna at turpis eleifend aliquet.</strong></p>
+
+      <h2 class="wp-block-heading">III. Informationen zur Datenverarbeitung</h2>
+
+      <ul class="wp-block-list">
+        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+        <li><a href="#">Integer vulputate nunc eget felis facilisis.</a></li>
+        <li><a href="#">Morbi vitae lorem suscipit, ullamcorper sem vel.</a></li>
+        <li><a href="#">Nunc interdum mauris ac cursus consectetur.</a></li>
+        <li><a href="#">Aenean egestas augue a justo faucibus venenatis.</a></li>
+      </ul>
+
+      <ol class="wp-block-list">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Integer vulputate nunc eget felis facilisis, vitae cursus libero mattis.</li>
+      </ol>
+
+      <p>Morbi condimentum est ac mi facilisis, vel faucibus nunc varius. Nam fermentum ligula magna, in elementum ligula ullamcorper et.</p>
+
+      <h2 class="wp-block-heading">Cookies</h2>
+
+      <h3 class="wp-block-heading">a) Session Cookies</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at felis malesuada, tempor magna nec, ultrices erat.</p>
+
+      <p>Nam sed suscipit orci. Praesent eros elit, tempus id cursus at, volutpat et mauris.</p>
+
+      <p>Donec hendrerit, lorem ac tristique facilisis, est libero aliquet turpis, ac ullamcorper tellus tellus non purus.</p>
+
+      <p>Nullam non nisl nec urna dictum imperdiet quis quis diam.</p>
+
+      <p>Ut in sem sed turpis feugiat tempus vel ac dui.</p>
+
+      <h3 class="wp-block-heading">b) Drittanbieter-Cookies</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec cursus lectus.</p>
+
+      <p>Pellentesque maximus condimentum ligula, sed placerat ex pellentesque in.</p>
+
+      <h2 class="wp-block-heading">c) Opt-out</h2>
+
+      <p>Integer ac sagittis leo. Maecenas non libero ac ante fermentum dictum id non quam.</p>
+
+      <p>Duis vulputate orci urna, eget fringilla est efficitur non.</p>
+
+      <p>Quisque at iaculis sem, a rutrum magna.</p>
+
+      <p>Aliquam magna ligula, dapibus vitae fermentum nec, commodo vel risus.</p>
+
+      <h2 class="wp-block-heading">Kontaktanfragen</h2>
+
+      <p>Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+      <p>Donec eu ex ac lacus interdum aliquet. Integer non consectetur sem.</p>
+
+      <p>Proin bibendum neque ut justo dictum accumsan at eget nisl.</p>
+
+      <h2 class="wp-block-heading">Serverdaten</h2>
+
+      <p>Praesent nec nisl elementum, vulputate sapien sed, accumsan nisl.</p>
+
+      <p>Aliquam feugiat tristique magna non ornare.</p>
+
+      <h2 class="wp-block-heading">Firewall</h2>
+
+      <p>Integer pulvinar velit vitae fermentum accumsan. Maecenas lacinia augue sed sollicitudin porta.</p>
+
+      <p>Vestibulum eget tincidunt neque. Curabitur gravida sapien id lorem convallis iaculis.</p>
+
+      <p>Donec id nisl tincidunt, luctus est sit amet, tristique lacus.</p>
+
+      <p><a href="#" target="_blank" rel="noreferrer noopener">Lorem Ipsum Text Generator</a></p>
+
+    </div>
+  </div>
+</section>
+
+        <!-- Footer -->
+            <footer class="bg-(--secondary)">
+                  <div class="footer-top py-60 md:py-80 lg:py-96 text-white">
+                      <div class="container">
+                          <div class="flex gap-24 2xl:gap-64 justify-start xxl:justify-between flex-wrap xxl:flex-nowrap">
+                               <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-[calc(28%-64px)] space-y-24">
+                                  <img src="./assets/images/logo-invert.svg" alt="company logo for footer" role="img" class="w-150"> 
+                                  <div class="text-P">
+                                    <p>Unser Team steht Ihnen jederzeit für Fragen und Angebote zur Verfügung. Ob telefonisch, per E-Mail oder persönlich – wir freuen uns auf Ihre Kontaktaufnahme.</p>
+                                  </div>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Kontakt</span>
+                                    <ul class="[&_li]:flex [&_li]:text-P [&_li]:gap-14 [&_li]:items-start list-none space-y-20">
+                                      <li> <img
+                                                src="./assets/images/Call.svg"
+                                                alt="Telefon Icon"
+                                                class="w-20 h-20 invert brightness-0  mt-3"
+                                                role="img"
+                                            ><a href="tel:+4915755819658" aria-label="Telefonnummer anrufen: +49 1575 581 9658" role="link">+49 1575 581 9658</a></li>
+                                             <!-- Email -->
+                                        <li>
+                                            <img
+                                                src="./assets/images/Mail.svg"
+                                                alt="E-Mail Icon"
+                                                 class="w-20 h-20 invert brightness-0 mt-5"
+                                                role="img"
+                                            >
+                                            <a href="mailto:info@ttp-solution.de" aria-label="E-Mail senden an info@ttp-solution.de">
+                                                info@ttp-solution.de
+                                            </a>
+                                        </li>
+                                        <!-- Address -->
+                                        <li>
+                                            <img
+                                                src="./assets/images/Lpcation.svg"
+                                                alt="Standort Icon"
+                                                class="w-20 h-20 invert brightness-0  mt-5"
+                                                role="img"
+                                            >
+                                            <address aria-label="Adresse: Musterstraße 123, 12345 Berlin, Deutschland" class="not-italic">
+                                                Industriestraße 12<br> 10115 Berlin <br> Deutschland
+                                               
+                                            </address>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Öffnungszeiten</span>
+                                    <ul class="timings-list [&_li]:grid [&_li]:gap-24 [&_li]:grid-cols-[120px_1fr] [&_li]:text-P space-y-8">
+                                      <li>
+                                          <span>Montag:</span><span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Dienstag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Mittwoch:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Donnerstag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                      <li>
+                                          <span>Freitag:</span> <span>07:30 - 12:00</span> 
+                                      </li>
+                                  </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Navigation</span>
+                                    <ul class="[&_li]:text-P space-y-8">
+                                      <li><a class="navlink" href="#start" role="link">Heim</a></li>
+                                      <li><a class="navlink" href="#Portfolio" role="link">Unsere Produkte</a></li>
+                                      <li><a class="navlink" href="#Unternehmen"role="link">Das Unternehmen</a></li>
+                                      <li><a class="navlink" href="#Kontakt" role="link">Kontakt</a></li>
+                                         
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
+                                    <span class="text-24 font-medium block">Rechtliches </span>
+                                    <ul class="[&_li]:text-P space-y-8">
+                                      <li><a href="/Impressum.html" aria-label="" role="link">Impressum</a></li>
+                                      <li><a href="/Datenschutzerklärung.html" aria-label="" role="link">Datenschutzerklärung</a></li>
+                                      <li><a href="/Agb.html" aria-label="" role="link">AGB</a></li>  
+                                    </ul>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="copyright bg-white py-10 text-P text-(--text-grey) text-center">
+                      <p>© 2025 TTP</p>
+                  </div>
+            </footer>
+        <!-- Footer Ends -->
+  
+
+     <!-- Script -->
+    <script src="./assets/js/script.js"></script>
+
+    </body>
+</html>

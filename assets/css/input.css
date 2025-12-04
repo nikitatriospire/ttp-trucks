@@ -94,7 +94,7 @@
     @apply  scroll-smooth!
   }
   body{
-    @apply  font-poppins
+    @apply overflow-x-hidden font-poppins
   }
 
   a, button{
@@ -109,12 +109,14 @@
          text-white w-fit capitalize text-P relative transition-all duration-500 
          ease-in-out transform hover:-translate-y-10;
 }
-
+iframe {
+  @apply h-auto lg:h-500!
+}
 
 ul:not(nav ul, footer ul){
   @apply relative
 }
-ul li:not(nav ul li, footer ul li){
+ul li:not(nav ul li, footer ul li), ol li{
   @apply relative pl-29 before:content-[''] before:w-8 before:h-8 before:bg-black before:absolute before:top-12 before:left-8 before:rounded-full
 }
 
@@ -134,7 +136,67 @@ ul li:not(nav ul li, footer ul li){
 html{
   scroll-behavior: smooth;
 }
+.all-desc{
+  font-size: clamp(18px, .5vw + 12px, 20px);
+  color:#2a2a2a;
+}
+.all-desc h2{
+  font-size:clamp(22px, 1vw + 14px, 31px);
+  font-weight:600;
+  margin-bottom:16px;
+   margin-top:20px;
+}
 
+.all-desc h3{
+  font-size:clamp(18px, .7vw + 14px, 24px);
+  font-weight:500;
+  margin-bottom:16px;
+   margin-top:20px;
+}
+.all-desc p{
+  margin-bottom:16px;
+}
 
+.all-desc a, .all-desc ul li a{
+  color:#0A3D62;
+}
+.all-desc ul, .all-desc ol {
+  display:flex;
+  flex-direction: column;
+  gap:16px;
+   margin-bottom:16px;
+   margin-top:20px;
+}
+.all-desc ul li, .all-desc ol li{
+  position: relative;
+  padding-left: 29px;
+}
 
+.all-desc ul li > a:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #0A3D62;
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  border-radius: 50%;
+}
 
+@media (max-width:375px){
+  .all-desc{
+  font-size: 16px;
+}
+}
+@media (max-width:320px){
+  .all-desc{
+  font-size: 14px;
+}
+.inner-page-banner h1{
+  font-size: 26px;
+}
+ul li:not(nav ul li, footer ul li)::before, ol li::before {
+      width:6px;
+      height:6px;
+    }
+}

@@ -1,10 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>The Truck Parts Solution</title>
+
         <link rel="stylesheet" href="./assets/css/output.css">
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.png">
     </head>
     <body>
         <!-- Header Starts -->
@@ -13,7 +15,7 @@
                 <div class="inner flex justify-between items-center gap-48">
                     <!-- Logo -->
                     <a href="/" aria-label="Homepage" class="relative z-100">
-                        <img src="./assets/images/company-logo.svg" alt="Company Logo">
+                        <img src="./assets/images/company-logo.svg" alt="Company Logo" class="relative z-100 w-200 md:w-225">
                     </a>
                     <!-- Navigation -->
                     <nav id="mobileNav" aria-label="Main Navigation" class="top-0 left-0 fixed lg:static bg-white lg:bg-transparent w-full lg:w-auto 
@@ -93,6 +95,7 @@
                                 sizes="(max-width: 767px) 100vw, 100vw"
                                 alt="Bannerbild für den Hero-Bereich"
                                 class="size-full object-cover aspect-square sm:aspect-auto"
+                                fetchpriority="high"
                             >
                         </div>
                     </div>
@@ -146,15 +149,15 @@
                     <div class="inner">
                         <div class="space-y-24 lg:space-y-44">
                             <div class="flex items-start justify-start flex-col space-y-8">
-                                <span class="block tracking-wide text-24/tight">Erfahrung – Qualität – Vertrauen</span>
+                                <span class="block tracking-wide text-24">Erfahrung – Qualität – Vertrauen</span>
                                 <h2 class="text-h2 font-medium leading-tight">Das Unternehmen</h2>
                             </div>
                             <div class="content flex gap-32 lg:gap-48 xl:gap-80 flex-col xl:flex-row">
-                                <div class="xl:w-1/2 space-y-24 lg:space-y-40 text-24/tight">
+                                <div class="xl:w-1/2 space-y-24 lg:space-y-40 text-24">
                                     <p>Unser Unternehmen vereint jahrzehntelange Branchenerfahrung mit modernem Servicegedanken. Wir verstehen uns als zuverlässiger Partner für Werkstätten, Speditionen und Teilehändler, die Wert auf OE- und OEM-Qualität legen.</p>
                                     <p>Unsere Erfahrung ermöglicht es uns, individuelle Lösungen und passgenaue Ersatzteile für nahezu jede Anforderung anzubieten – mit Fokus auf höchste Kundenzufriedenheit.</p>
                                 </div>
-                                <div class="xl:w-1/2 text-24/tight [&_ul]:space-y-16 xl:[&_ul]:space-y-32 xxl:[&_ul]:w-[86%]">
+                                <div class="xl:w-1/2 text-24 [&_ul]:space-y-16 xl:[&_ul]:space-y-32 xxl:[&_ul]:w-[86%]">
                                     <ul>
                                         <li>Performance durch schnelle Verfügbarkeit und effiziente Prozesse</li>
                                         <li>Qualität durch Originalteile und OEM-Komponenten führender Hersteller</li>
@@ -195,7 +198,7 @@
                                             src="./assets/images/card_icon1.svg"
                                             alt="icon for Motor und Antriebsstrang"
                                             role="img"
-                                            class="max-w-120"
+                                            class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
                                             <h3 class="card-title text-h3/tight font-semibold">Motor und Antriebsstrang</h3>
@@ -212,7 +215,7 @@
                                             src="./assets/images/card_icon2.svg"
                                             alt="icon for Brems- und Fahrwerkssysteme"
                                             role="img"
-                                            class="max-w-120"
+                                            class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
                                             <h3 class="card-title text-h3/tight font-semibold">Brems- und Fahrwerkssysteme</h3>
@@ -229,7 +232,7 @@
                                             src="./assets/images/card_icon3.svg"
                                             alt="icon for Filter, Verschleißteile und Zubehör"
                                             role="img"
-                                            class="max-w-120"
+                                            class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
                                             <h3 class="card-title text-h3/tight font-semibold">Filter, Verschleißteile und Zubehör</h3>
@@ -246,7 +249,7 @@
                                             src="./assets/images/card_icon4.svg"
                                             alt="icon for Elektrik & Sensorik"
                                             role="img"
-                                            class="max-w-120"
+                                            class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
                                             <h3 class="card-title text-h3/tight font-semibold">Elektrik & Sensorik</h3>
@@ -263,7 +266,7 @@
                                             src="./assets/images/card_icon5.svg"
                                             alt="icon for Kabine und Karosserieteile"
                                             role="img"
-                                            class="max-w-120"
+                                            class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
                                             <h3 class="card-title text-h3/tight font-semibold">Kabine und Karosserieteile</h3>
@@ -335,7 +338,7 @@
                                             src="./assets/images/badge-check.svg"
                                             alt="icon for OE-Teile (Originalausrüstung)"
                                             role="img"
-                                            class="max-w-120"
+                                            class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
                                             <h3 class="card-title1 text-h3/tight font-semibold">OE-Teile (Originalausrüstung)</h3>
@@ -352,7 +355,7 @@
                                             src="./assets/images/settings.svg"
                                             alt="icon for OEM-Teile (Original Equipment Manufacturer)"
                                             role="img"
-                                            class="max-w-120"
+                                            class="w-80 md:w-120 h-80 md:h-120 object-contain"
                                         >
                                         <div class="space-y-16">
                                             <h3 class="card-title1 text-h3/tight font-semibold">OEM-Teile (Original Equipment Manufacturer)</h3>
@@ -410,7 +413,7 @@
                                             <img
                                                 src="./assets/images/Mail.svg"
                                                 alt="E-Mail Icon"
-                                                class="w-24 h-24"
+                                                class="w-24"
                                                 role="img"
                                             >
                                             <a href="mailto:info@ttp.de" class="text-P leading-normal text-(--text-grey)" aria-label="E-Mail senden an info@ttp.de">
@@ -437,16 +440,16 @@
                                         <!-- Static Image Placeholder -->
                                         <div
                                             id="mapPlaceholder"
-                                            class="relative w-full cursor-pointer group"
+                                            class="relative w-full cursor-pointer group h-full xl:h-500"
                                             role="button"
                                             aria-label="Interaktive Karte öffnen"
                                             tabindex="0"
                                         >
-                                            <img src="./assets/images/map-berlin.webp" alt="Statische Karte von Berlin – klicken um Google Maps zu öffnen" class="w-full h-auto object-cover">
+                                            <img src="./assets/images/map-berlin.webp" alt="Statische Karte von Berlin – klicken um Google Maps zu öffnen" class="w-full h-full object-cover aspect-square">
                                             <!-- Overlay text/icon -->
                                             <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
                                                 <span class="bg-white text-black px-4 py-2 rounded shadow">
-                                                    Karte öffnen
+                                                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" x="0" y="0" viewBox="0 0 492 492" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g fill-rule="evenodd" clip-rule="evenodd"><ellipse cx="246.262" cy="404.968" fill="#cfd8dc" rx="94.106" ry="26.092" opacity="1" data-original="#cfd8dc"></ellipse><path fill="#f44336" d="M126.475 182.206c0-66.156 53.63-119.786 119.786-119.786s119.786 53.63 119.786 119.786c0 22.177-6.358 43.889-18.321 62.562L246.261 403.152 144.796 244.768a115.98 115.98 0 0 1-18.321-62.562z" opacity="1" data-original="#f44336"></path><circle cx="246.261" cy="182.205" r="50.58" fill="#c62828" transform="rotate(-11.6 246.359 182.248)" opacity="1" data-original="#c62828"></circle></g></g></svg>
                                                 </span>
                                             </div>
                                         </div>
@@ -527,11 +530,11 @@
 
             <!-- Footer -->
               <footer class="bg-(--secondary)">
-                  <div class="footer-top py-96 text-white">
+                  <div class="footer-top py-60 md:py-80 lg:py-96 text-white">
                       <div class="container">
                           <div class="flex gap-24 2xl:gap-64 justify-start xxl:justify-between flex-wrap xxl:flex-nowrap">
                                <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-[calc(28%-64px)] space-y-24">
-                                  <img src="./assets/images/logo-invert.svg" alt="company logo for footer" role="img"> 
+                                  <img src="./assets/images/logo-invert.svg" alt="company logo for footer" role="img" class="w-150"> 
                                   <div class="text-P">
                                     <p>Unser Team steht Ihnen jederzeit für Fragen und Angebote zur Verfügung. Ob telefonisch, per E-Mail oder persönlich – wir freuen uns auf Ihre Kontaktaufnahme.</p>
                                   </div>
@@ -541,17 +544,17 @@
                                     <span class="text-24 font-medium block">Kontakt</span>
                                     <ul class="[&_li]:flex [&_li]:text-P [&_li]:gap-14 [&_li]:items-start list-none space-y-20">
                                       <li> <img
-                                                src="./assets/images/Call.svg"
+                                                src="./assets/images/call-white.svg"
                                                 alt="Telefon Icon"
-                                                class="w-20 h-20 invert brightness-0  mt-3"
+                                                class="w-24 h-24"
                                                 role="img"
                                             ><a href="tel:+4915755819658" aria-label="Telefonnummer anrufen: +49 1575 581 9658" role="link">+49 1575 581 9658</a></li>
                                              <!-- Email -->
                                         <li>
                                             <img
-                                                src="./assets/images/Mail.svg"
+                                                src="./assets/images/mail-white.svg"
                                                 alt="E-Mail Icon"
-                                                 class="w-20 h-20 invert brightness-0 mt-5"
+                                                 class="w-24 h-24 mt-2"
                                                 role="img"
                                             >
                                             <a href="mailto:info@ttp-solution.de" aria-label="E-Mail senden an info@ttp-solution.de">
@@ -561,9 +564,9 @@
                                         <!-- Address -->
                                         <li>
                                             <img
-                                                src="./assets/images/Lpcation.svg"
+                                                src="./assets/images/location-white.svg"
                                                 alt="Standort Icon"
-                                                class="w-20 h-20 invert brightness-0  mt-5"
+                                                class="w-24 h-24 mt-5"
                                                 role="img"
                                             >
                                             <address aria-label="Adresse: Musterstraße 123, 12345 Berlin, Deutschland" class="not-italic">
@@ -598,10 +601,10 @@
                                 <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
                                     <span class="text-24 font-medium block">Navigation</span>
                                     <ul class="[&_li]:text-P space-y-8">
-                                      <li><a href="#" aria-label="" role="link">Heim</a></li>
-                                      <li><a href="#" aria-label="" role="link">Unsere Produkte</a></li>
-                                      <li><a href="#" aria-label="" role="link">Das Unternehmen</a></li>
-                                      <li><a href="#" aria-label="" role="link">Kontakt</a></li>
+                                      <li><a class="navlink" href="#start" role="link">Heim</a></li>
+                                      <li><a class="navlink" href="#Portfolio" role="link">Unsere Produkte</a></li>
+                                      <li><a class="navlink" href="#Unternehmen"role="link">Das Unternehmen</a></li>
+                                      <li><a class="navlink" href="#Kontakt" role="link">Kontakt</a></li>
                                          
                                     </ul>
                                 </div>
@@ -609,9 +612,9 @@
                                 <div class="w-full md:w-[calc(50%-14px)] lg:w-[calc(33%-24px)] xxl:w-auto space-y-20 md:space-y-32">
                                     <span class="text-24 font-medium block">Rechtliches </span>
                                     <ul class="[&_li]:text-P space-y-8">
-                                      <li><a href="#" aria-label="" role="link">Impressum</a></li>
-                                      <li><a href="#" aria-label="" role="link">Datenschutzerklärung</a></li>
-                                      <li><a href="#" aria-label="" role="link">AGB</a></li>  
+                                      <li><a href="/Impressum.html" aria-label="" role="link">Impressum</a></li>
+                                      <li><a href="/Datenschutzerklärung.html" aria-label="" role="link">Datenschutzerklärung</a></li>
+                                      <li><a href="/Agb.html" aria-label="" role="link">AGB</a></li>  
                                     </ul>
                                 </div>
                           </div>
@@ -629,155 +632,8 @@
   
 
   
-
-        <!-- Card title height alignment -->
-        <script>
-              function setEqualTitleHeights() {
-                const titles = document.querySelectorAll(".card-title, .card-title1");
-
-                // If screen width is below 600px → reset and exit
-                if (window.innerWidth < 600) {
-                  titles.forEach(title => title.style.height = "auto");
-                  return;
-                }
-
-                // Reset height first
-                titles.forEach(title => title.style.height = "auto");
-
-                // Get max height
-                let maxH = 0;
-                titles.forEach(title => {
-                  const h = title.offsetHeight;
-                  if (h > maxH) maxH = h;
-                });
-
-                // Apply max height
-                titles.forEach(title => title.style.height = maxH + "px");
-              }
-
-              // Run on load
-              window.addEventListener("load", setEqualTitleHeights);
-
-              // Run on resize (with delay)
-              window.addEventListener("resize", () => {
-                setTimeout(setEqualTitleHeights, 150);
-              });
-        </script>
-        <!-- Contact title in 3lines -->
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            const title = document.querySelector(".contact-title");
-            if (!title) return;
-
-            const text = [
-              "Sie haben noch Fragen?",
-              "Schreiben Sie uns eine Nachricht",
-              "[Kontakt]"
-            ];
-
-            title.innerHTML = text.join("<br>");
-          });
-        </script>
-        <!-- for map -->
-        <script>
-              document.getElementById("mapPlaceholder").addEventListener("click", loadMap);
-              document.getElementById("mapPlaceholder").addEventListener("keypress", (e) => {
-                if (e.key === "Enter") loadMap();
-              });
-
-              function loadMap() {
-                const mapContainer = document.getElementById("mapContainer");
-
-                // Google Maps embed URL (Berlin example — replace with your location)
-                const mapURL =
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24298.71480895873!2d13.3833!3d52.5167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c77c23b9ff%3A0xf28dc8f2966b5e4c!2sBerlin!5e0!3m2!1sde!2sde!4v0000000000";
-
-                // Inject iframe
-                mapContainer.innerHTML = `
-                  <iframe 
-                    title="Google Maps Standort Berlin"
-                    aria-label="Google Maps Standort Berlin"
-                    src="${mapURL}"
-                    width="100%"
-                    height="350"
-                    loading="lazy"
-                    style="border:0;"
-                    allowfullscreen=""
-                    referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
-                `;
-
-                // Hide placeholder, show map
-                document.getElementById("mapPlaceholder").classList.add("hidden");
-                mapContainer.classList.remove("hidden");
-              }
-        </script>
-        <!-- Header on scroll shadow -->
-        <script>
-    const header = document.querySelector("header");
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
-        header.classList.add("shadow-lg");
-      } else {
-        header.classList.remove("shadow-lg");
-      }
-    });
-    </script>
-      <script>
-const btn = document.getElementById("menuBtn");
-const nav = document.getElementById("mobileNav");
-const body = document.body;
-
-// Toggle mobile menu
-btn.addEventListener("click", () => {
-  btn.classList.toggle("open");
-
-  const isOpening = nav.classList.contains("opacity-0");
-
-  if (isOpening) {
-    nav.classList.remove("opacity-0", "-translate-y-10", "pointer-events-none");
-    nav.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
-    body.classList.add("overflow-hidden");
-  } else {
-    nav.classList.add("opacity-0", "-translate-y-10", "pointer-events-none");
-    nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
-    body.classList.remove("overflow-hidden");
-  }
-});
-
-// Nav links
-document.querySelectorAll(".navlink").forEach(link => {
-  link.addEventListener("click", (e) => {
-    const targetID = link.getAttribute("href");
-    const target = document.querySelector(targetID);
-
-    // MOBILE MODE
-    const isMobile = window.innerWidth < 1024;
-
-    if (isMobile) {
-      e.preventDefault();
-
-      // Smooth scroll
-      if (target) {
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      }
-
-      // Close menu
-      nav.classList.add("opacity-0", "-translate-y-10", "pointer-events-none");
-      nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
-      body.classList.remove("overflow-hidden");
-      btn.classList.remove("open");
-
-      return;
-    }
-
-    // DESKTOP MODE — allow normal behavior (NO preventDefault)
-  });
-});
-</script>
+       <!-- Script -->
+        <script src="./assets/js/script.js"></script>
 
     </body>
 </html>
