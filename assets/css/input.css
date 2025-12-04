@@ -200,3 +200,28 @@ ul li:not(nav ul li, footer ul li)::before, ol li::before {
       height:6px;
     }
 }
+#back-to-top {
+        position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0A3D62;
+    width: 50px;
+    height: 50px;
+    z-index: 99;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 350ms ease-in-out;
+}
+#back-to-top svg{
+  margin:0 auto;
+}
+  #back-to-top.show {
+        display: block;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    #back-to-top.hide {
+        opacity: 0;
+        transform: scale(.8);
+    }

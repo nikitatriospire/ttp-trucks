@@ -1,18 +1,18 @@
 // sticky Header scroll
- const header = document.querySelector("header");
+const header = document.querySelector("header");
 
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
-        header.classList.add("shadow-lg");
-      } else {
-        header.classList.remove("shadow-lg");
-      }
-    });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
+    header.classList.add("shadow-lg");
+  } else {
+    header.classList.remove("shadow-lg");
+  }
+});
 
- // Mobile Menu
+// Mobile Menu
 const btn = document.getElementById("menuBtn");
 const nav = document.getElementById("mobileNav");
-const navLinks = nav.querySelector("ul"); 
+const navLinks = nav.querySelector("ul");
 const body = document.body;
 
 // Toggle mobile menu
@@ -22,14 +22,17 @@ btn.addEventListener("click", () => {
 
   if (opening) {
     // OPEN MENU
-    nav.classList.remove("opacity-0", "-translate-y-200", "pointer-events-none");
+    nav.classList.remove(
+      "opacity-0",
+      "-translate-y-200",
+      "pointer-events-none"
+    );
     nav.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
 
     navLinks.classList.add("opacity-100", "translate-y-0");
     navLinks.classList.remove("opacity-0", "translate-y-10");
 
     body.classList.add("overflow-hidden");
-
   } else {
     // CLOSE MENU (both animate together – no jerk)
     nav.classList.add("opacity-0", "-translate-y-200", "pointer-events-none");
@@ -43,9 +46,8 @@ btn.addEventListener("click", () => {
   }
 });
 
-
 // Nav links click
-document.querySelectorAll(".navlink").forEach(link => {
+document.querySelectorAll(".navlink").forEach((link) => {
   link.addEventListener("click", (e) => {
     const targetID = link.getAttribute("href");
     const target = document.querySelector(targetID);
@@ -70,7 +72,11 @@ document.querySelectorAll(".navlink").forEach(link => {
 
       // Smooth close same as above — NO TIMEOUT, NO JUMP
       nav.classList.add("opacity-0", "-translate-y-200", "pointer-events-none");
-      nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+      nav.classList.remove(
+        "opacity-100",
+        "translate-y-0",
+        "pointer-events-auto"
+      );
 
       navLinks.classList.add("opacity-0", "translate-y-10");
       navLinks.classList.remove("opacity-100", "translate-y-0");
@@ -88,22 +94,22 @@ function setEqualHeightsFor(selector) {
 
   // If screen width is below 600px → reset and exit
   if (window.innerWidth < 600) {
-    items.forEach(item => item.style.height = "auto");
+    items.forEach((item) => (item.style.height = "auto"));
     return;
   }
 
   // Reset height first
-  items.forEach(item => item.style.height = "auto");
+  items.forEach((item) => (item.style.height = "auto"));
 
   // Find max height
   let maxH = 0;
-  items.forEach(item => {
+  items.forEach((item) => {
     const h = item.offsetHeight;
     if (h > maxH) maxH = h;
   });
 
   // Apply max height
-  items.forEach(item => item.style.height = maxH + "px");
+  items.forEach((item) => (item.style.height = maxH + "px"));
 }
 
 function updateAllHeights() {
@@ -121,33 +127,33 @@ window.addEventListener("resize", () => {
 
 //  Contact title in 3lines
 document.addEventListener("DOMContentLoaded", () => {
-            const title = document.querySelector(".contact-title");
-            if (!title) return;
+  const title = document.querySelector(".contact-title");
+  if (!title) return;
 
-            const text = [
-              "Sie haben noch Fragen?",
-              "Schreiben Sie uns eine Nachricht",
-              "[Kontakt]"
-            ];
+  const text = [
+    "Sie haben noch Fragen?",
+    "Schreiben Sie uns eine Nachricht",
+    "[Kontakt]",
+  ];
 
-            title.innerHTML = text.join("<br>");
-          });
+  title.innerHTML = text.join("<br>");
+});
 
 // Map js
 document.getElementById("mapPlaceholder").addEventListener("click", loadMap);
-              document.getElementById("mapPlaceholder").addEventListener("keypress", (e) => {
-                if (e.key === "Enter") loadMap();
-              });
+document.getElementById("mapPlaceholder").addEventListener("keypress", (e) => {
+  if (e.key === "Enter") loadMap();
+});
 
-              function loadMap() {
-                const mapContainer = document.getElementById("mapContainer");
+function loadMap() {
+  const mapContainer = document.getElementById("mapContainer");
 
-                // Google Maps embed URL (Berlin example — replace with your location)
-                const mapURL =
-                  "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d96479.42034098943!2d13.441293948866406!3d52.484529560817144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMusterstra%C3%9Fe%20123%E2%80%A812345%20Berlin%2C%20Deutschland!5e1!3m2!1sen!2sin!4v1764823956291!5m2!1sen!2sin";
+  // Google Maps embed URL (Berlin example — replace with your location)
+  const mapURL =
+    "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d96479.42034098943!2d13.441293948866406!3d52.484529560817144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMusterstra%C3%9Fe%20123%E2%80%A812345%20Berlin%2C%20Deutschland!5e1!3m2!1sen!2sin!4v1764823956291!5m2!1sen!2sin";
 
-                // Inject iframe
-                mapContainer.innerHTML = `
+  // Inject iframe
+  mapContainer.innerHTML = `
                   <iframe 
                     title="Google Maps Standort Berlin"
                     aria-label="Google Maps Standort Berlin"
@@ -161,7 +167,32 @@ document.getElementById("mapPlaceholder").addEventListener("click", loadMap);
                   </iframe>
                 `;
 
-                // Hide placeholder, show map
-                document.getElementById("mapPlaceholder").classList.add("hidden");
-                mapContainer.classList.remove("hidden");
-              }
+  // Hide placeholder, show map
+  document.getElementById("mapPlaceholder").classList.add("hidden");
+  mapContainer.classList.remove("hidden");
+}
+
+// back to top
+window.addEventListener("scroll", function () {
+  var backToTopButton = document.getElementById("back-to-top");
+
+  if (window.scrollY > 100) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+});
+
+document.getElementById("back-to-top").addEventListener("click", function () {
+  var scrollToTop = function () {
+    var currentPosition = window.scrollY;
+    if (currentPosition > 0) {
+      window.scrollTo(0, currentPosition - 40);
+      setTimeout(scrollToTop, 2);
+    }
+  };
+
+  scrollToTop();
+
+  return false;
+});
