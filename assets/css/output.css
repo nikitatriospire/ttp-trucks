@@ -23,7 +23,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-poppins: 'Poppins';
-    --text-h1: clamp(42px, 2.5vw + 24px, 64px);
+    --text-h1: clamp(38px, 2.5vw + 24px, 64px);
     --text-h2: clamp(30px, 2vw + 21px, 48px);
     --text-h3: clamp(24px, 1vw + 14px, 31px);
     --text-24: clamp(20px, .7vw + 14px, 24px);
@@ -283,6 +283,9 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
+  .h-92 {
+    height: calc(var(--spacing) * 92);
+  }
   .h-auto {
     height: auto;
   }
@@ -514,9 +517,6 @@
   }
   .pt-140 {
     padding-top: calc(var(--spacing) * 140);
-  }
-  .pt-220 {
-    padding-top: calc(var(--spacing) * 220);
   }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
@@ -1309,15 +1309,6 @@ html {
 }
 #back-to-top svg {
   margin: 0 auto;
-}
-#back-to-top.show {
-  display: block;
-  opacity: 1;
-  transform: scale(1);
-}
-#back-to-top.hide {
-  opacity: 0;
-  transform: scale(.8);
 }
 @property --tw-translate-x {
   syntax: "*";

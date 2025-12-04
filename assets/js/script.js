@@ -173,26 +173,15 @@ function loadMap() {
 }
 
 // back to top
-window.addEventListener("scroll", function () {
-  var backToTopButton = document.getElementById("back-to-top");
+const backToTopButton = document.getElementById("back-to-top");
 
-  if (window.scrollY > 100) {
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
-  }
-});
+window.addEventListener("scroll", () => {
+  backToTopButton.classList.toggle("hidden", window.scrollY < 100);
+}, { passive: true });
 
-document.getElementById("back-to-top").addEventListener("click", function () {
-  var scrollToTop = function () {
-    var currentPosition = window.scrollY;
-    if (currentPosition > 0) {
-      window.scrollTo(0, currentPosition - 40);
-      setTimeout(scrollToTop, 2);
-    }
-  };
-
-  scrollToTop();
-
-  return false;
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });

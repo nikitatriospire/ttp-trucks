@@ -72,7 +72,7 @@
  
   --font-poppins:  'Poppins';
  
-  --text-h1: clamp(42px, 2.5vw + 24px, 64px);
+  --text-h1: clamp(38px, 2.5vw + 24px, 64px);
 
    --text-h2: clamp(30px, 2vw + 21px, 48px);
   --text-h3: clamp(24px, 1vw + 14px, 31px);
@@ -215,13 +215,4 @@ ul li:not(nav ul li, footer ul li)::before, ol li::before {
 #back-to-top svg{
   margin:0 auto;
 }
-  #back-to-top.show {
-        display: block;
-        opacity: 1;
-        transform: scale(1);
-    }
 
-    #back-to-top.hide {
-        opacity: 0;
-        transform: scale(.8);
-    }
