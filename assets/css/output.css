@@ -512,6 +512,9 @@
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
+  .pt-140 {
+    padding-top: calc(var(--spacing) * 140);
+  }
   .pt-220 {
     padding-top: calc(var(--spacing) * 220);
   }
@@ -677,6 +680,11 @@
       width: calc(var(--spacing) * 200);
     }
   }
+  .sm\:pt-160 {
+    @media (width >= 576px) {
+      padding-top: calc(var(--spacing) * 160);
+    }
+  }
   .sm\:text-h1 {
     @media (width >= 576px) {
       font-size: var(--text-h1);
@@ -739,6 +747,11 @@
   .md\:py-80 {
     @media (width >= 768px) {
       padding-block: calc(var(--spacing) * 80);
+    }
+  }
+  .md\:pt-220 {
+    @media (width >= 768px) {
+      padding-top: calc(var(--spacing) * 220);
     }
   }
   .lg\:pointer-events-auto {
