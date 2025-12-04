@@ -12,62 +12,71 @@
  // Mobile Menu
 const btn = document.getElementById("menuBtn");
 const nav = document.getElementById("mobileNav");
+const navLinks = nav.querySelector("ul"); 
 const body = document.body;
 
 // Toggle mobile menu
 btn.addEventListener("click", () => {
   btn.classList.toggle("open");
+  const opening = nav.classList.contains("opacity-0");
 
-  const isOpening = nav.classList.contains("opacity-0");
-
-  if (isOpening) {
-    nav.classList.remove("opacity-0", "-translate-y-10", "pointer-events-none");
+  if (opening) {
+    // OPEN MENU
+    nav.classList.remove("opacity-0", "-translate-y-200", "pointer-events-none");
     nav.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+
+    navLinks.classList.add("opacity-100", "translate-y-0");
+    navLinks.classList.remove("opacity-0", "translate-y-10");
+
     body.classList.add("overflow-hidden");
+
   } else {
-    nav.classList.add("opacity-0", "-translate-y-10", "pointer-events-none");
+    // CLOSE MENU (both animate together – no jerk)
+    nav.classList.add("opacity-0", "-translate-y-200", "pointer-events-none");
     nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+
+    navLinks.classList.add("opacity-0", "translate-y-10");
+    navLinks.classList.remove("opacity-100", "translate-y-0");
+
+    btn.classList.remove("open");
     body.classList.remove("overflow-hidden");
   }
 });
 
-// Nav links
+
+// Nav links click
 document.querySelectorAll(".navlink").forEach(link => {
   link.addEventListener("click", (e) => {
     const targetID = link.getAttribute("href");
     const target = document.querySelector(targetID);
 
-    // --- Redirect if target does NOT exist on current page ---
+    // If ID doesn't exist → redirect
     if (!target) {
       window.location.href = "/" + targetID;
       return;
     }
 
-    // MOBILE MODE
-    const isMobile = window.innerWidth < 1024;
-    if (isMobile) {
+    // MOBILE ONLY
+    if (window.innerWidth < 1024) {
       e.preventDefault();
 
-      // Smooth scroll with header offset
-      if (target) {
-        const header = document.querySelector("header");
-        const headerHeight = header ? header.offsetHeight : 0;
-        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.offsetHeight : 0;
+      const position = target.getBoundingClientRect().top + window.scrollY;
 
-        setTimeout(() => {
-          window.scrollTo({
-            top: elementPosition - headerHeight,
-            behavior: "smooth"
-          });
-        }, 100);
-      }
+      setTimeout(() => {
+        window.scrollTo({ top: position - headerHeight, behavior: "smooth" });
+      }, 100);
 
-      // Close menu
-      nav.classList.add("opacity-0", "-translate-y-10", "pointer-events-none");
+      // Smooth close same as above — NO TIMEOUT, NO JUMP
+      nav.classList.add("opacity-0", "-translate-y-200", "pointer-events-none");
       nav.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
-      body.classList.remove("overflow-hidden");
-      btn.classList.remove("open");
 
+      navLinks.classList.add("opacity-0", "translate-y-10");
+      navLinks.classList.remove("opacity-100", "translate-y-0");
+
+      btn.classList.remove("open");
+      body.classList.remove("overflow-hidden");
       return;
     }
   });
