@@ -88,42 +88,41 @@ document.querySelectorAll(".navlink").forEach((link) => {
   });
 });
 
-// Card title height alignment
+// Equal height logic
 function setEqualHeightsFor(selector) {
   const items = document.querySelectorAll(selector);
 
-  // If screen width is below 600px → reset and exit
   if (window.innerWidth < 600) {
-    items.forEach((item) => (item.style.height = "auto"));
+    items.forEach(item => item.style.height = "auto");
     return;
   }
 
-  // Reset height first
-  items.forEach((item) => (item.style.height = "auto"));
+  items.forEach(item => item.style.height = "auto");
 
-  // Find max height
   let maxH = 0;
-  items.forEach((item) => {
-    const h = item.offsetHeight;
-    if (h > maxH) maxH = h;
-  });
+  items.forEach(item => maxH = Math.max(maxH, item.offsetHeight));
 
-  // Apply max height
-  items.forEach((item) => (item.style.height = maxH + "px"));
+  items.forEach(item => item.style.height = maxH + "px");
 }
 
+// Update all
 function updateAllHeights() {
-  setEqualHeightsFor(".card-title");
-  setEqualHeightsFor(".card-title1");
+  [
+    ".card-title",
+    ".card-content",
+    ".card-title1",
+    ".card-content1"
+  ].forEach(selector => setEqualHeightsFor(selector));
 }
 
-// Run on load
+// Load
 window.addEventListener("load", updateAllHeights);
 
-// Run on resize (with a slight delay)
+// Resize
 window.addEventListener("resize", () => {
   setTimeout(updateAllHeights, 150);
 });
+
 
 //  Contact title in 3lines
 // document.addEventListener("DOMContentLoaded", () => {

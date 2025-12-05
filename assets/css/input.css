@@ -125,10 +125,13 @@ ul:not(nav ul, footer ul){
   @apply relative space-y-8
 }
 ul li:not(nav ul li, footer ul li), ol li{
-  @apply text-P sm:text-24 relative pl-29 before:content-[''] before:w-8 before:h-8 before:bg-black before:absolute before:top-12 before:left-8 before:rounded-full
+  @apply text-P sm:text-24 relative pl-29 before:content-[''] before:w-8 before:h-8 before:bg-black before:absolute before:top-12 before:left-8 before:rounded-full w-fit
 }
 .card-item ul li, .card-item1 ul li{
-   @apply text-P sm:text-24 relative pl-29 before:content-[''] before:w-8 before:h-8 before:bg-(--text-grey) before:absolute before:top-12 before:left-8 before:rounded-full text-(--text-grey)
+   @apply text-P relative pl-29 before:content-[''] before:w-8 before:h-8 before:bg-(--text-grey) before:absolute before:top-12 before:left-8 before:rounded-full text-(--text-grey) w-fit
+}
+.cta ul li{
+   @apply text-P sm:text-24 relative pl-29 before:content-[''] before:w-8 before:h-8 before:bg-white before:absolute before:top-12 before:left-8 before:rounded-full text-white w-fit
 }
 }
 /* Custom CSS */
