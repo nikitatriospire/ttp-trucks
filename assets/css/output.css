@@ -697,6 +697,11 @@
       width: calc(var(--spacing) * 200);
     }
   }
+  .sm\:gap-32 {
+    @media (width >= 576px) {
+      gap: calc(var(--spacing) * 32);
+    }
+  }
   .sm\:p-24 {
     @media (width >= 576px) {
       padding: calc(var(--spacing) * 24);
@@ -760,6 +765,15 @@
   .md\:gap-96 {
     @media (width >= 768px) {
       gap: calc(var(--spacing) * 96);
+    }
+  }
+  .md\:space-y-20 {
+    @media (width >= 768px) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 20) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 20) * calc(1 - var(--tw-space-y-reverse)));
+      }
     }
   }
   .md\:space-y-32 {
@@ -829,6 +843,11 @@
   .lg\:w-1\/2 {
     @media (width >= 992px) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .lg\:w-\[calc\(33\%-13px\)\] {
+    @media (width >= 992px) {
+      width: calc(33% - 13px);
     }
   }
   .lg\:w-\[calc\(33\%-24px\)\] {
@@ -1252,10 +1271,16 @@
   }
   ul:not(nav ul, footer ul) {
     position: relative;
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   ul li:not(nav ul li, footer ul li), ol li {
     position: relative;
     padding-left: calc(var(--spacing) * 29);
+    font-size: var(--text-P);
     &::before {
       content: var(--tw-content);
       position: absolute;
@@ -1287,6 +1312,50 @@
     &::before {
       --tw-content: '';
       content: var(--tw-content);
+    }
+    @media (width >= 576px) {
+      font-size: var(--text-24);
+    }
+  }
+  .card-item ul li, .card-item1 ul li {
+    position: relative;
+    padding-left: calc(var(--spacing) * 29);
+    font-size: var(--text-P);
+    color: var(--text-grey);
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+    }
+    &::before {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 12);
+    }
+    &::before {
+      content: var(--tw-content);
+      left: calc(var(--spacing) * 8);
+    }
+    &::before {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 8);
+    }
+    &::before {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 8);
+    }
+    &::before {
+      content: var(--tw-content);
+      border-radius: calc(infinity * 1px);
+    }
+    &::before {
+      content: var(--tw-content);
+      background-color: var(--text-grey);
+    }
+    &::before {
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+    @media (width >= 576px) {
+      font-size: var(--text-24);
     }
   }
 }

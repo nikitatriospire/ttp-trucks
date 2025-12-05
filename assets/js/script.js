@@ -126,18 +126,18 @@ window.addEventListener("resize", () => {
 });
 
 //  Contact title in 3lines
-document.addEventListener("DOMContentLoaded", () => {
-  const title = document.querySelector(".contact-title");
-  if (!title) return;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const title = document.querySelector(".contact-title");
+//   if (!title) return;
 
-  const text = [
-    "Sie haben noch Fragen?",
-    "Schreiben Sie uns eine Nachricht",
-    "[Kontakt]",
-  ];
+//   const text = [
+//     "Sie haben noch Fragen?",
+//     "Schreiben Sie uns eine Nachricht",
+//     "[Kontakt]",
+//   ];
 
-  title.innerHTML = text.join("<br>");
-});
+//   title.innerHTML = text.join("<br>");
+// });
 
 // Map js (Safe – No Console Error If Element Missing)
 const mapPlaceholder = document.getElementById("mapPlaceholder");
