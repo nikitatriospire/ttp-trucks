@@ -46,6 +46,14 @@
   font-style: normal;
   font-display: swap;
 }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --secondary: #0A3D62;
+  --button-text: #FFFFFF;
+  --nav-color:#2a2a2a;
+  --text-grey:#4B4B4B;
+}
 @theme {
   --spacing: 1px;
   --spacing-space: clamp(3.125rem, 2.2416rem + 4.417vw, 6.25rem);
@@ -80,7 +88,7 @@
   --text-P: clamp(18px, .5vw + 12px, 20px);
 
   --text-body: 18px;
- 
+ --text-sm: 16px;
 }
 
 
@@ -106,7 +114,7 @@
 /* Base Button */
 .btn-blue {
   @apply px-20 py-10 bg-(--secondary) flex justify-center items-center gap-8 
-         text-white w-fit capitalize text-P relative transition-all duration-500 
+         text-white w-fit capitalize text-[var(--text-sm)] sm:text-P relative transition-all duration-500 
          ease-in-out transform hover:-translate-y-10;
 }
 iframe {
@@ -121,21 +129,15 @@ ul li:not(nav ul li, footer ul li), ol li{
 }
 
 }
+/* Custom CSS */
 ::placeholder{
   color:#4B4B4B;
 }
-/* Custom color themes using attribute selectors */
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --secondary: #0A3D62;
-  --button-text: #FFFFFF;
-  --nav-color:#2a2a2a;
-  --text-grey:#4B4B4B;
-}
+
 html{
   scroll-behavior: smooth;
 }
+/* Impressum css */
 .all-desc{
   font-size: clamp(18px, .5vw + 12px, 20px);
   color:#2a2a2a;
